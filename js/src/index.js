@@ -2,6 +2,20 @@
 
 
 /* ==============================
+    set top button
+============================== */
+(function(){
+    var getTerms = document.querySelector('.terms-wrapper');
+    if (getTerms){
+        var setTopBtn = document.createElement('a');
+        setTopBtn.className = 'top-btn';
+        setTopBtn.setAttribute('href', '#top');
+        getTerms.appendChild(setTopBtn);
+    }
+})();
+
+
+/* ==============================
     meta Tags **meta [name, content]**
 ============================== */
 (function(){

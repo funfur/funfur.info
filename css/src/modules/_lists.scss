@@ -148,22 +148,23 @@
     }
 
     .top-btn {
+        display: block;
         color: #fff;
         margin: 0 auto;
         cursor: pointer;
         width: $grid * 48;
         padding-top: $grid4x;
         padding-bottom: $grid4x;
-        height: $grid8x;
+        height: $grid16x;
         text-align: center;
-        margin-top: $grid32x;
+        margin-top: $grid16x;
         background-color: $brand;
         @include border-radius($grid);
         @include render-hack(transition);
-        @include transition(all, .25s, ease);
-
+        
         &:hover {
             background-color: $brand-hover;
+            @include transition(all .25s ease);
         }
 
         &::after {
