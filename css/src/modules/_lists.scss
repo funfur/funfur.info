@@ -122,14 +122,27 @@
         @media #{$tablet} {
             padding: $grid24x $grid8x $grid24x;
         }
-        @media #{$mobile} {
-            padding: $grid24x $grid6x $grid24x;
+
+        @media #{$pablet} {
+            padding: $grid12x $grid6x $grid16x;
 
             h1 {
                 @include font-size(28px);
             }
+
             h3 {
-                @include font-size(22px);
+                @include font-size(21px);
+            }
+        }
+
+        @media #{$mobile} {
+            padding: $grid8x $grid4x $grid16x;
+
+            h1 {
+                @include font-size(24px);
+            }
+            h3 {
+                @include font-size(21px);
             }
         }
     }

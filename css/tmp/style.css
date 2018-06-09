@@ -280,15 +280,24 @@ p {
   @media only screen and (max-width: 768px) {
     .terms .terms-wrapper {
       padding: 96px 32px 96px; } }
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 420px) {
     .terms .terms-wrapper {
-      padding: 96px 24px 96px; }
+      padding: 48px 24px 64px; }
       .terms .terms-wrapper h1 {
         font-size: 28px;
         font-size: 1.75rem; }
       .terms .terms-wrapper h3 {
-        font-size: 22px;
-        font-size: 1.375rem; } }
+        font-size: 21px;
+        font-size: 1.3125rem; } }
+  @media only screen and (max-width: 360px) {
+    .terms .terms-wrapper {
+      padding: 32px 16px 64px; }
+      .terms .terms-wrapper h1 {
+        font-size: 24px;
+        font-size: 1.5rem; }
+      .terms .terms-wrapper h3 {
+        font-size: 21px;
+        font-size: 1.3125rem; } }
 
 .terms .top-btn {
   color: #fff;
