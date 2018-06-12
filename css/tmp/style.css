@@ -63,11 +63,6 @@ body {
     mixin default font
 ============================== */
 /** Bold */
-@font-face {
-  font-family: 'SF Display';
-  font-weight: 700;
-  src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf"); }
-
 /* ==============================
     default font-size, line-height
 ============================== */
@@ -93,9 +88,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-text-decoration-skip: ink;
   color: #333; }
-  body .en {
-    font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-    -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'; }
 
 a {
   color: #FFBE19;

@@ -22,16 +22,16 @@
 
 
 /** Bold */
-@font-face {
-    font-family: 'SF Display';
-    font-weight: 700;
-    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
-}
+// @font-face {
+//     font-family: 'SF Display';
+//     font-weight: 700;
+//     src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+// }
 
-@mixin font-stack-en() {
-            font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-    -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-}
+// @mixin font-stack-en() {
+//             font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+//     -webkit-font-family: 'SF Pro Display', 'SF Display', 'Roboto', 'Apple Gothic', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+// }
 
 
 /* ==============================
@@ -73,9 +73,9 @@ body {
     @include font-settings();
     color: $text333;
 
-    .en {
-        @include font-stack-en();
-    }
+    // .en {
+    //     @include font-stack-en();
+    // }
 }
 
 a {
