@@ -172,23 +172,23 @@
         }
     }
 
-    .footer-wrapper {
-        padding: $grid4x 0;
+    // .footer-wrapper {
+    //     padding: $grid4x 0;
 
-        footer {
-            width: auto;
-            margin: 0 auto;
-            max-width: 640px;
+    //     footer {
+    //         width: auto;
+    //         margin: 0 auto;
+    //         max-width: 640px;
 
-            @media #{$tablet} {
-                margin: 0 auto;
-                padding: 0 $grid8x;
-            }
+    //         @media #{$tablet} {
+    //             margin: 0 auto;
+    //             padding: 0 $grid8x;
+    //         }
             
-            @media #{$mobile} {
-                margin: 0 auto;
-                padding: 0 $grid6x;
-            }
-        }
-    }
+    //         @media #{$mobile} {
+    //             margin: 0 auto;
+    //             padding: 0 $grid6x;
+    //         }
+    //     }
+    // }
 }

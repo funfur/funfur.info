@@ -337,18 +337,3 @@ p {
     will-change: transition; }
   .terms .top-btn::after {
     content: "Back to Top"; }
-
-.terms .footer-wrapper {
-  padding: 16px 0; }
-  .terms .footer-wrapper footer {
-    width: auto;
-    margin: 0 auto;
-    max-width: 640px; }
-    @media only screen and (max-width: 768px) {
-      .terms .footer-wrapper footer {
-        margin: 0 auto;
-        padding: 0 32px; } }
-    @media only screen and (max-width: 360px) {
-      .terms .footer-wrapper footer {
-        margin: 0 auto;
-        padding: 0 24px; } }
