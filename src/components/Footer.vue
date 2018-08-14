@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import {globalVar} from '../main.js'
+
 export default {
   name: 'footer-el',
   data () {
@@ -28,7 +30,7 @@ export default {
       infoList: [
         '사업자등록번호: 435-15-00646',
         '대표이사: 유덕열',
-        '대표전화: 050-6591-6200',
+        '대표전화: ' + globalVar.callTo,
         '주소: 서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호'
       ],
       tos: {

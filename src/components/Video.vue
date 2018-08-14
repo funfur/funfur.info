@@ -3,8 +3,7 @@
     div.container
       h1.video__title 뻔뻐 X 공방 작가님
       youtube.video__body(
-        video-id="videoId"
-        ref="youtube"
+        :video-id="'_Zl1pThOZBs'"
       )
 </template>
 
