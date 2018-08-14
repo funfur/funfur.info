@@ -1,0 +1,31 @@
+#stats {
+  background-color: $brand-yellow;
+
+  .container {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: $grid16x;
+    text-align: center;
+
+    @media #{$pablet} {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: $grid4x;
+    }
+
+    .stats__wrapper {
+
+      .stats__count {
+        margin-top: $grid10x;
+        @include font-size($grid12x);
+      }
+
+      .stats__title {
+        font-weight: 900;
+        margin-bottom: 0;
+        margin-top: -#{$grid6x};
+      }
+    }
+  }
+}

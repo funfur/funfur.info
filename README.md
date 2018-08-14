@@ -1,19 +1,18 @@
-# Funfur - Terms and Policies
+# funfur-info
 
-> Terms and Policies for Funfur application
+> funfur.info
 
-## Setup
+## Build Setup
 
 ``` bash
 # install dependencies
 npm install
 
-# task runner
-gulp watch
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
 ```
 
-## Sites
-
-- [Privacy](https://funfur.github.io/html/privacy.html)
-- [Terms of products](https://funfur.github.io/html/terms-product.html)
-- [Terms of site](https://funfur.github.io/html/terms-site.html)
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

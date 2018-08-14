@@ -1,0 +1,53 @@
+/* ==============================
+  box-shadow
+============================== */
+@mixin box-shadow         ($val:$grid, $val2:$grid2x, $color:$black08){
+  -webkit-box-shadow:  0 $val $val2 $color;
+  -ms-box-shadow:      0 $val $val2 $color;
+  -o-box-shadow:       0 $val $val2 $color;
+  box-shadow:          0 $val $val2 $color;
+}
+
+
+
+/* ==============================
+  border-radius
+============================== */
+@mixin border-radius($val:$grid4x){
+  border-radius: $val
+}
+
+
+
+/* ==============================
+  global btn
+============================== */
+.global__cta {
+  text-align: center;
+
+  .global__cta--btn {
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+    height: $grid14x;
+    font-weight: 900;
+    margin-top: $grid8x;
+    color: $brand-yellow;
+    background-color: #fff;
+    transition: all .25s ease;
+    border: 2px solid $brand-yellow;
+    @include border-radius();
+    @include box-shadow($grid2x, $grid4x);
+
+    &.ghost__white {
+      border: 2px solid #fff;
+    }
+
+    &:hover {
+      color: #fff;
+      font-weight: 900;
+      background-color: $brand-yellow;
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+#video {
+  border-top: 1px solid $texteee;
+
+  .video__title {
+    font-weight: 300;
+    margin-bottom: $grid8x;
+  }
+
+  iframe {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}

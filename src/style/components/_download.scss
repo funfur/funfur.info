@@ -1,0 +1,55 @@
+#download {
+  height: 640px;
+  overflow-y: hidden;
+  border-top: 1px solid $texteee;
+
+  @media #{$pablet} {
+    height: 560px;
+  }
+
+  .download__title {
+    font-weight: 300;
+    margin-bottom: $grid8x;
+  }
+
+  .download__badge {
+    width: 100%;
+    outline: none;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+
+    .download__badge--link {
+      display: inline-block;
+      margin-bottom: $grid8x;
+
+      .download__badge--each {
+        width: $grid32x;
+        height: $grid10x;
+        transition: opacity .25s ease;
+
+        &:hover {
+          opacity: .5;
+          cursor: pointer;
+        }
+      }
+
+      &:not(:first-child) {
+        margin-left: $grid2x;
+      }
+    }
+  }
+
+  .download__mockup {
+    text-align: center;
+
+    .download__mockup--img {
+      width: 360px;
+      margin: 0 auto;
+
+      @media #{$pablet} {
+        width: 280px;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+#service {
+
+  .service__title {
+    font-weight: 300;
+    margin-bottom: $grid8x;
+  }
+
+  .service__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: $grid16x;
+
+    @media #{$tablet} {
+      grid-gap: $grid8x;
+    }
+
+    @media #{$landsc} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service__card--each {
+      border-radius: $grid2x;
+
+      .service__card--img {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @include border-radius();
+
+
+        $BaseURI: '/src/assets/dist/service_img';
+
+        @for $i from 0 through 2{
+          &.img-#{$i} {
+            background-image: url('#{$BaseURI + $i}.jpg');
+          }
+        }
+      }
+
+      .service__card--title,
+      .service__card--text {
+        margin-top: $grid8x;
+
+        @media #{$pablet} {
+          margin-top: $grid4x;
+        }
+      }
+
+      .service__card--title {
+        margin: $grid6x 0;
+      }
+
+      .service__card--text {
+        margin: -#{$grid4x} 0 $grid6x 0;
+      }
+    }
+  }
+
+  .global__cta--btn {
+    @include box-shadow(0, 0, transparent);
+  }
+}
