@@ -10,9 +10,9 @@
         ) {{ info }}
 
       p.footer__terms
-        router-link.footer__terms-each(
+        a.footer__terms-each(
           :key="key"
-          :to="value"
+          :href="'https://funfur.github.io/html/' + value + '.html'"
           target="_blank"
           :title="key + '(새 탭)'"
           v-for="(value, key) in tos"
@@ -33,10 +33,10 @@ export default {
         '대표전화: ' + globalVar.callTo,
         '주소: 서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호'
       ],
-      tos: {
-        개인정보처리방침: '/privacy',
-        제품판매이용약관: '/term-product',
-        사장님사이트이용약관: '/term-site'
+      tos: {  // temp URI
+        개인정보처리방침: 'privacy',
+        제품판매이용약관: 'terms-product',
+        사장님사이트이용약관: 'terms-site'
       }
     }
   },

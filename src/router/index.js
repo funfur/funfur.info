@@ -5,8 +5,8 @@ import Meta from 'vue-meta'
 
 import Home from '../pages/Home'
 import Privacy from '../pages/Privacy'
-import TermProduct from '../pages/TermProduct'
-import TermSite from '../pages/TermSite'
+import TermsProduct from '../pages/TermsProduct'
+import TermsSite from '../pages/TermsSite'
 
 
 Vue.use(VueRouter)
@@ -32,14 +32,14 @@ const router = new VueRouter({
       component: Privacy
     },
     {
-      path: '/term-product',
+      path: '/terms-product',
       name: 'term-product',
-      component: TermProduct
+      component: TermsProduct
     },
     {
-      path: '/term-site',
+      path: '/terms-site',
       name: 'term-site',
-      component: TermSite
+      component: TermsSite
     }
   ]
 })
