@@ -9,6 +9,10 @@
     grid-gap: $grid16x;
     text-align: center;
 
+    @media #{$middle} {
+      grid-gap: $grid6x;
+    }
+
     @media #{$pablet} {
       grid-template-columns: repeat(1, 1fr);
       grid-gap: $grid4x;

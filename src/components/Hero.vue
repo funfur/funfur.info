@@ -7,12 +7,13 @@
         |공방가구의 새로운 판로
         br
         |모바일 가구거리
+        span.hero__title--nbsp &nbsp;
         span.hero__br
         |뻔뻐가 함께합니다
 
       div.global__cta
         <a class="global__cta--link" v-scroll-to="{el:'#download', offset: -54}">
-          button.global__cta--btn.brand--bg 앱 다운로드
+          button.global__cta--btn.brand--bg 어플다운로드
         </a>
       div.global__cta
         a.global__cta--link(

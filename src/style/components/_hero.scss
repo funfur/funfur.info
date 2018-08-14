@@ -30,9 +30,17 @@ $baseURI: '/src/assets/dist/hero.jpg';
 
     .hero__title {
 
-      @media #{$pablet} {
+      .hero__title--nbsp {
+        display: inline-block;
+      }
+
+      @media #{$middle} {
         @include font-size($grid6x);
         @include line-height($grid6x);
+
+        .hero__title--nbsp {
+          display: none;
+        }
 
         .hero__br {
 

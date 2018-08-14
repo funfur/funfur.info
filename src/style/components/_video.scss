@@ -11,5 +11,9 @@
     height: 480px;
     margin: 0 auto;
     display: inline-block;
+
+    @media #{$pablet} {
+      height: 240px;
+    }
   }
 }
