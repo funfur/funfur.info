@@ -12,7 +12,7 @@
       p.footer__terms
         a.footer__terms-each(
           :key="key"
-          :href="'tos' + value"
+          :href="value"
           target="_blank"
           :title="key + '(새 탭)'"
           v-for="(value, key) in tos"
