@@ -10,9 +10,9 @@
         ) {{ info }}
 
       p.footer__terms
-        a.footer__terms-each(
+        router-link.footer__terms-each(
           :key="key"
-          :href="value"
+          :to="value"
           target="_blank"
           :title="key + '(새 탭)'"
           v-for="(value, key) in tos"
