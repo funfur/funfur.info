@@ -15,7 +15,7 @@ Vue.use(Meta)
 
 const router = new VueRouter({
   mode: 'history',
-  // base: __dirname,
+  base: __dirname,
   routes: [
     {
       path: '/',
