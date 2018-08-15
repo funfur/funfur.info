@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import {globalVar} from '../main.js'
+import {globalVar} from '../globalVar'
 
 export default {
   name: 'service',

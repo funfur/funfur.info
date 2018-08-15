@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {globalVar} from '../main.js'
+import {globalVar} from '../globalVar'
 
 export default {
   name: 'footer-el',
@@ -35,7 +35,6 @@ export default {
         '주소: 서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호 (04763)'
       ],
       tos: {
-        // TODO: temp URI
         개인정보처리방침: 'privacy',
         제품판매이용약관: 'terms-product',
         사장님사이트이용약관: 'terms-site'

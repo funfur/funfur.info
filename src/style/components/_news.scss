@@ -14,8 +14,9 @@
 
   .news__text {
     font-weight: 900;
+    margin: -#{$grid2x} 0 0;
     @include font-size($grid8x);
-    @include line-height($grid4x);
+    @include line-height($grid8x);
 
     &::after,
     &::before {

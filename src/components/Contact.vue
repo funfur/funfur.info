@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import {globalVar} from '../main.js'
+import {globalVar} from '../globalVar'
 
 export default {
   name: 'contact',
@@ -55,7 +55,7 @@ export default {
   methods: {
     plusFriendChat() {
       Kakao.PlusFriend.chat({
-        plusFriendId: '_Xcxblxl'
+        plusFriendId: globalVar.kakaoID
       })
     }
   }

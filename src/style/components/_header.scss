@@ -6,7 +6,7 @@
   height: $grid14x;
   align-items: center;
   background-color: #fff;
-  @include box-shadow();
+  @include box-shadow($grid2x, $grid3x);
 
   .header__left {
     float: left;

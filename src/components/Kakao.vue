@@ -10,12 +10,14 @@
 </template>
 
 <script>
+import {globalVar} from '../globalVar'
+
 export default {
   name: 'kakao-btn',
   methods: {
     plusFriendChat() {
       Kakao.PlusFriend.chat({
-        plusFriendId: '_Xcxblxl'
+        plusFriendId: globalVar.kakaoID
       })
     }
   }

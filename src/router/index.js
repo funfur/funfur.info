@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Meta from 'vue-meta'
-// https://alligator.io/vuejs/vue-seo-tips/
 
 import Home from '../pages/Home'
 import Privacy from '../components/tos/Privacy'
@@ -14,8 +13,6 @@ Vue.use(Meta)
 
 
 const router = new VueRouter({
-  // mode: 'history',
-  // base: __dirname,
   routes: [
     {
       path: '/',
