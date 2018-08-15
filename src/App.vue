@@ -13,20 +13,15 @@ export default {
       lang: 'ko'
     },
     meta: [
-      {name: 'description', content: '모바일 가구거리, 뻔뻐'},
       {property: 'og:title', content: '모바일 가구거리, 뻔뻐'},
-      {property: 'og:description', content: '모바일 가구거리, 뻔뻐'},
       {property: 'og:type', content: 'website'},
-      {property: 'og:url', content: 'https://funfur-info.github.io'},
+      // {property: 'og:url', content: 'https://funfur-info.github.io'},
       {name: 'twitter:card', content: 'summary'},
       {name: 'twitter:title', content: '모바일 가구거리, 뻔뻐'},
-      {name: 'twitter:description', content: '모바일 가구거리, 뻔뻐'},
-      {itemprop: 'name', content: '모바일 가구거리, 뻔뻐'},
-      {itemprop: 'description', content: '모바일 가구거리, 뻔뻐'},
     ],
-    links: [
-      {rel: 'canonical', href: 'https://funfur-info.github.io'}
-    ]
+    // links: [
+    //   {rel: 'canonical', href: 'https://funfur-info.github.io'}
+    // ]
   }
 }
 </script>
