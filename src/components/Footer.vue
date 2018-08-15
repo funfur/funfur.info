@@ -12,7 +12,7 @@
       p.footer__terms
         router-link.footer__terms-each(
           :key="key"
-          :to="'/tos/' + value"
+          :to="value"
           target="_blank"
           :title="key + '(새 탭)'"
           v-for="(value, key) in tos"
