@@ -4,7 +4,7 @@
       div.stats__wrapper(
         v-for="(value, key) in statsList"
       )
-        h3.stats__count {{ value.count | formatting }}
+        h3.stats__count {{ value.count | numberFormat }}
         p.stats__title {{ value.title }}
 
       //- p(
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import numberFormat from '@/filters/numberFormat'
 // require('es6-promise').polyfill()
 // import axios from 'axios'
 
@@ -38,9 +39,7 @@ export default {
     }
   },
   filters: {
-    formatting(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
+    numberFormat
   },
   // mounted () {
   //   axios

@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import App from '@/App.vue'
+import router from '@/router'
 import axios from 'axios'
 import VueScrollTo from 'vue-scrollto'
-import {globalVar} from './globalVar'
+import {globalVar} from '@/globalVar'
 
-import './style/style.scss'
+import '@/style/style.scss'
 
 
 Vue.use(VueScrollTo)

@@ -11,7 +11,7 @@
 <script>
 import Vue from 'vue'
 import VueYoutube from 'vue-youtube'
-import {globalVar} from '../globalVar'
+import {globalVar} from '@/globalVar'
 
 Vue.use(VueYoutube)
 

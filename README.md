@@ -2,6 +2,8 @@
 
 > funfur.info
 
+[Hosted with Firebase](https://funfur-info.firebaseapp.com)
+
 ## Build Setup
 
 ``` bash

@@ -13,16 +13,16 @@
 </template>
 
 <script>
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import Service from '../components/Service'
-import Stats from '../components/Stats'
-import Video from '../components/Video'
-import News from '../components/News'
-import Download from '../components/Download'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
-import Kakao from '../components/Kakao'
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import Service from '@/components/Service'
+import Stats from '@/components/Stats'
+import Video from '@/components/Video'
+import News from '@/components/News'
+import Download from '@/components/Download'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
+import Kakao from '@/components/Kakao'
 
 export default {
   name: 'home',

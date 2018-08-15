@@ -229,8 +229,8 @@
 </template>
 
 <script>
-import Footer from '../Footer'
-import CloseBtn from '../misc/CloseBtn'
+import Footer from '@components/Footer'
+import CloseBtn from '@components/misc/CloseBtn'
 
 export default {
   name: 'term-site',
