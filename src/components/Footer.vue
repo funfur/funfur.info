@@ -31,9 +31,11 @@ export default {
         '사업자등록번호: 435-15-00646',
         '대표이사: 유덕열',
         '대표전화: ' + globalVar.callTo,
-        '주소: 서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호'
+        '팩스: 0504-433-6202',
+        '주소: 서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호 (04763)'
       ],
-      tos: {  // temp URI
+      tos: {
+        // TODO: temp URI
         개인정보처리방침: 'privacy',
         제품판매이용약관: 'terms-product',
         사장님사이트이용약관: 'terms-site'
