@@ -144,7 +144,7 @@
 
 <script>
 // import Header from '../components/Header'
-import Footer from '../Footer'
+import Footer from '../src/components/Footer'
 
 export default {
   name: 'term-product',
