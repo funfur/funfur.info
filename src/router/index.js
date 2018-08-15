@@ -4,9 +4,9 @@ import Meta from 'vue-meta'
 // https://alligator.io/vuejs/vue-seo-tips/
 
 import Home from '../pages/Home'
-import Privacy from '../pages/Privacy'
-import TermsProduct from '../pages/TermsProduct'
-import TermsSite from '../pages/TermsSite'
+import Privacy from '../components/tos/Privacy'
+import TermsProduct from '../components/tos/TermsProduct'
+import TermsSite from '../components/tos/TermsSite'
 
 
 Vue.use(VueRouter)
@@ -27,17 +27,17 @@ const router = new VueRouter({
       redirect: '/'
     },
     {
-      path: '/privacy',
+      path: '/tos/privacy',
       name: 'privacy',
       component: Privacy
     },
     {
-      path: '/terms-product',
+      path: '/tos/terms-product',
       name: 'term-product',
       component: TermsProduct
     },
     {
-      path: '/terms-site',
+      path: '/tos/terms-site',
       name: 'term-site',
       component: TermsSite
     }
