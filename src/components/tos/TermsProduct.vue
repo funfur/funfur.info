@@ -1,6 +1,5 @@
 <template lang="pug">
   div#terms
-    //- Header
     div.terms-wrapper
       h1 {{ pageTitle }}
       h3 제 1 조 (목적)
@@ -133,18 +132,12 @@
       p 이 약관과 회사와 회원 간의 "서비스" 이용계약 및 회원 상호간의 분쟁에 대해 회사를 당사자로 하는 소송이 제기될 경우에는 회사의 본사 소재지를 관할하는 법원을 합의관할법원으로 정합니다.
 
     div.global__cta
-      a.global__cta--link(
-        :to="'/'"
-        v-scroll-to="'body'"
-        title="맨 위로"
-      )
-        button.global__cta--btn 맨 위로
-    Footer
+      CloseBtn
 </template>
 
 <script>
-// import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Footer from '../Footer'
+import CloseBtn from '../misc/CloseBtn'
 
 export default {
   name: 'term-product',
@@ -158,8 +151,8 @@ export default {
     titleTemplate: '%s - 제품판매이용약관',
   },
   components: {
-    // Header,
-    Footer
+    Footer,
+    CloseBtn
   }
 }
 </script>

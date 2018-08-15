@@ -4,9 +4,9 @@ import Meta from 'vue-meta'
 // https://alligator.io/vuejs/vue-seo-tips/
 
 import Home from '../pages/Home'
-import Privacy from '../tos/Privacy'
-import TermsProduct from '../tos/TermsProduct'
-import TermsSite from '../tos/TermsSite'
+import Privacy from '../components/tos/Privacy'
+import TermsProduct from '../components/tos/TermsProduct'
+import TermsSite from '../components/tos/TermsSite'
 
 
 Vue.use(VueRouter)

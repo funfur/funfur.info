@@ -1,6 +1,5 @@
 <template lang="pug">
   div#terms
-    //- Header
     div.terms-wrapper
       h1 {{ pageTitle }}
       h3 1. 개인정보의 처리 목적
@@ -74,18 +73,12 @@
         li 이 개인정보처리방침은 시행일로부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 공지사항을 통하여 고지할 것입니다.
 
     div.global__cta
-      a.global__cta--link(
-        :to="'/'"
-        v-scroll-to="'body'"
-        title="맨 위로"
-      )
-        button.global__cta--btn 맨 위로
-    Footer
+      CloseBtn
 </template>
 
 <script>
-// import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Footer from '../Footer'
+import CloseBtn from '../misc/CloseBtn'
 
 export default {
   name: 'privacy',
@@ -99,8 +92,8 @@ export default {
     titleTemplate: '%s - 개인정보처리방침',
   },
   components: {
-    // Header,
-    Footer
+    Footer,
+    CloseBtn
   }
 }
 </script>

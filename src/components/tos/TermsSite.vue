@@ -1,6 +1,5 @@
 <template lang="pug">
   div#terms
-    //- Header
     div.terms-wrapper
       h1 {{ pageTitle }}
       h3 제 1 조 (목적)
@@ -226,18 +225,12 @@
         li 이 약관은 2017년 12월 01일부터 시행됩니다.
 
     div.global__cta
-      a.global__cta--link(
-        :to="'/'"
-        v-scroll-to="'body'"
-        title="맨 위로"
-      )
-        button.global__cta--btn 맨 위로
-    Footer
+      CloseBtn
 </template>
 
 <script>
-// import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Footer from '../Footer'
+import CloseBtn from '../misc/CloseBtn'
 
 export default {
   name: 'term-site',
@@ -251,8 +244,8 @@ export default {
     titleTemplate: '%s - 사장님사이트이용약관',
   },
   components: {
-    // Header,
-    Footer
+    Footer,
+    CloseBtn
   }
 }
 </script>

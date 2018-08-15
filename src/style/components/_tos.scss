@@ -155,8 +155,9 @@
     }
   }
 
+
   .global__cta--btn {
-    display: block;
-    margin: -#{$grid16x} auto $grid32x;
+    display: inline-block;
+    margin: -#{$grid16x} auto $grid40x !important;
   }
 }
