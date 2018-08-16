@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
-    grid-gap: $grid16x;
+    grid-gap: $grid8x;
 
     @media #{$tablet} {
       grid-gap: $grid8x;
@@ -26,7 +26,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        // @include border-radius($grid);
+        @include border-radius($grid2x);
 
 
         $BaseURI: '/src/assets/dist/service_img';
