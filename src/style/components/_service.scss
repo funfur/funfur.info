@@ -20,14 +20,13 @@
     }
 
     .service__card--each {
-      border-radius: $grid2x;
 
       .service__card--img {
         height: 200px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        @include border-radius();
+        // @include border-radius($grid);
 
 
         $BaseURI: '/src/assets/dist/service_img';
@@ -49,7 +48,7 @@
       }
 
       .service__card--title {
-        margin: $grid6x 0;
+        margin: $grid4x 0 $grid6x;
       }
 
       .service__card--text {
