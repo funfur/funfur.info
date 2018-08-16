@@ -1,30 +1,33 @@
-#plusfriend-addfriend-button:not(.contact__each) {
+#plusfriend-addfriend-button{
 
-  @keyframes popup {
-    from {
-      opacity: 0;
-      transform: scale(0);
+  &:not(.contact__each) {
+
+    @keyframes popup {
+      from {
+        opacity: 0;
+        transform: scale(0);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
 
-  right: $grid4x;
-  bottom: $grid4x;
-  position: fixed;
-  transform: scale(0);
-  animation: popup .25s ease-in-out 2.5s 1 forwards;
-
-  button {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: none;
+    right: $grid4x;
+    bottom: $grid4x;
+    position: fixed;
+    transform: scale(0);
+    animation: popup .25s ease-in-out 2.5s 1 forwards;
 
     img {
+      cursor: pointer;
       border-radius: $grid8x;
+      transition: all .25s ease;
+      @include box-shadow($grid2x, $grid3x, $black08);
+
+      &:hover {
+        @include box-shadow($grid2x, $grid3x, $black16);
+      }
     }
   }
 }

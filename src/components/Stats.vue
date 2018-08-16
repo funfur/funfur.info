@@ -14,7 +14,6 @@
 
 <script>
 import numberFormat from '@/filters/numberFormat'
-// require('es6-promise').polyfill()
 // import axios from 'axios'
 
 export default {
@@ -39,7 +38,10 @@ export default {
     }
   },
   filters: {
-    numberFormat
+    numberFormat,
+    // formatting(num) {
+    //   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    // }
   },
   // mounted () {
   //   axios

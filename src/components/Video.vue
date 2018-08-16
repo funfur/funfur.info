@@ -22,7 +22,7 @@ export default {
       videoID: globalVar.youtubeID,
       url: 'https://youtu.be/' + globalVar.youtubeID,
       title: '뻔뻐 × 공방 작가님',
-      subtitle: 'D.Blik 가구 디자이너 이영찬'
+      subtitle: globalVar.youtubeTitle
     }
   },
   components: {

@@ -11,6 +11,11 @@
           span.header__text 모바일 가구거리, <b>뻔뻐</b>
 
       div.header__right
+        a.header__right--link(
+          :href="baseURI"
+          target="_blank"
+          title="뻔뻐 입점신청 페이지(새 탭)"
+        ) 입점신청하기
         a.header__right--icon(
           :key="key"
           target="_blank"
@@ -20,11 +25,6 @@
           :class="'fa fa-' + value.iconClass"
           v-for="(value, key) in snsIconList"
         )
-        a.header__right--link(
-          :href="baseURI"
-          target="_blank"
-          title="뻔뻐 입점신청 페이지(새 탭)"
-        ) 입점신청하기
 </template>
 
 <script>

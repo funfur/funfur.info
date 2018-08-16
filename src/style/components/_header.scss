@@ -57,22 +57,18 @@
       display: inline-block;
       transition: color .25s ease;
       transform: translate(0, 55%);
-
-      &:hover {
-        color: $brand-yellow-pressed;
-      }
     }
 
     .header__right--icon {
       outline: none;
       color: $textccc;
-      margin-right: $grid8x;
+      margin-left: $grid8x;
       transition: color .25s ease;
       transform: translate(0, 65%);
       @include font-size($grid6x);
 
       @media #{$pablet} {
-        margin-right: $grid6x;
+        margin-left: $grid6x;
       }
 
       &.fa-instagram {

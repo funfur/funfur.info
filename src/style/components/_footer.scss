@@ -1,64 +1,63 @@
 #footer {
   width: 100%;
   height: $grid24x;
-  padding: $grid8x 0;
   border-top: 1px solid $texteee;
 
-  @media #{$pablet} {
-    padding-bottom: $grid16x;
-  }
+  .container {
+    padding: $grid8x 0;
 
-  @media #{$mobile} {
-    padding-bottom: $grid24x;
-  }
-
-
-  .footer__copyright,
-  .footer__info-each,
-  .footer__terms {
-    @include font-size($grid3x);
-    @include line-height($grid3x);
-  }
+    @media #{$pablet} {
+      padding-bottom: $grid16x;
+    }
 
 
-  .footer__copyright {
-    color: $text333;
-    font-weight: 900;
-  }
-
-
-  .footer__info,
-  .footer__terms {
-    color: $text999;
-    margin-top: -#{$grid3x};
-    @include line-height($grid4x);
-
-
+    .footer__copyright,
+    .footer__info-each,
     .footer__terms {
-      margin-top: -#{$grid2x};
+      @include font-size($grid3x);
+      @include line-height($grid3x);
     }
 
-    .footer__terms-each {
+
+    .footer__copyright {
+      color: $text333;
+      font-weight: 900;
+    }
+
+
+    .footer__info,
+    .footer__terms {
       color: $text999;
-      transition: color .25s ease;
+      margin-top: -#{$grid3x};
+      @include line-height($grid4x);
 
-      &:hover {
-        color: $text333;
+
+      .footer__terms {
+        margin-top: -#{$grid2x};
       }
 
-      &:not(:first-child) {
-        margin-left: $grid2x;
+      .footer__terms-each {
+        color: $text999;
+        transition: color .25s ease;
+
+        &:hover {
+          color: $text333;
+        }
+
+        &:not(:first-child) {
+          margin-left: $grid2x;
+        }
       }
-    }
 
 
-    .footer__info-each {
+      .footer__info-each {
 
-      &:not(:first-child) {
+        &:not(:first-child) {
 
-        &::before {
-          content: " | ";
-          font-weight: 900;
+          &::before {
+            content: " | ";
+            font-weight: 900;
+          }
         }
       }
     }

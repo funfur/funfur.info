@@ -1,12 +1,10 @@
 <template lang="pug">
   div#plusfriend-addfriend-button
-    button(
+    img(
       title="카카오톡 문의하기"
       @click="plusFriendChat"
+      src="/src/assets/dist/kakao.svg"
     )
-      img(
-        src="/src/assets/dist/kakao.svg"
-      )
 </template>
 
 <script>

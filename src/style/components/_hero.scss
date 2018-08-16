@@ -28,6 +28,11 @@ $baseURI: '/src/assets/dist/hero.jpg';
     margin-right: -50%;
     transform: translate(-50%, -50%);
 
+    .hero__subtitle {
+      margin-bottom: -#{$grid2x};
+      @include font-size($grid5x);
+    }
+
     .hero__title {
 
       .hero__title--nbsp {
@@ -48,6 +53,21 @@ $baseURI: '/src/assets/dist/hero.jpg';
             content: "\a ";
             white-space: pre;
           }
+        }
+      }
+    }
+
+    @media #{$middle} {
+
+      .hero__title--nbsp {
+        display: none;
+      }
+
+      .hero__br {
+
+        &::after {
+          content: "\a ";
+          white-space: pre;
         }
       }
     }
