@@ -31,26 +31,19 @@ export default {
       baseURI: globalVar.registerURI,
       serviceList: {
         upload: {
-          img: 'https://images.unsplash.com/photo-1524749292158-7540c2494485?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ab5846a70b2ce31cf27899249b229b1e&auto=format&fit=crop&w=900&q=60',
           title: '5분만에 끝내는 제품업로드',
-          desc: '기존 오픈마켓의 제품당 평균 업로드 시간이 약 60분이었던 반면, 가구전문 플랫폼 뻔뻐의 업로드 시간은 단 5분 입니다. 최소시간으로 최대효과를 누려보세요.'
+          desc: '제품당 평균 업로드 시간이 기존 약 60분에서 단 5분으로. 가구전문 플랫폼 뻔뻐로 최소시간으로 최대효과를 누려보세요.'
         },
         costs: {
-          img: 'https://images.unsplash.com/photo-1521540216272-a50305cd4421?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5433224431f2cb232741669ea1a89dca&auto=format&fit=crop&w=900&q=60',
           title: '판매수수료, 입점비용 무료',
-          desc: '모바일 가구거리 뻔뻐에는 판매수수료, 입점비용이 전혀 없습니다. 무료 회원가입 후 제품을 업로드하는 즉시, 소비자는 앱을 통해 제품을 확인 및 주문할 수 있습니다.'
+          desc: '판매수수료, 입점비용이 없습니다. 무료 회원가입 후 제품을 올리면 소비자는 동시에 앱을 통해 제품을 확인, 구매합니다.'
         },
         corporate: {
-          img: 'https://images.unsplash.com/photo-1519636125090-67a506cc7c74?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=64aa8466f29a7d1e867267f658b42ee6&auto=format&fit=crop&w=900&q=60',
           title: '함께하는 공방 플랫폼 마케팅',
-          desc: "대규모 자본을 가진 대기업이 아닌 일반 가구공방이 마케팅을 하기는 현실적으로 불가능했습니다. 이제 모두가 함께 모여서, '우리'를 홍보하겠습니다."
+          desc: "직접 만들기에는 바쁘고 어떻게 하는지도 몰랐던 홍보. 이제 모두가 함께 모여서, '우리'가 홍보됩니다."
         }
       }
     }
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>

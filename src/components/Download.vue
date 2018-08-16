@@ -32,19 +32,15 @@ export default {
         ios: {
           src: '/src/assets/dist/appstore.svg',
           title: 'iPhone 앱스토어 다운받기',
-          href: globalVar.baseURI
+          href: globalVar.iosURI
         },
         android: {
           src: '/src/assets/dist/playstore.svg',
           title: 'Android 구글 플레이스토어 다운받기',
-          href: globalVar.baseURI
+          href: globalVar.androidURI
         }
       }
     }
   }
 }
 </script>
-
-<style lang="scss">
-
-</style>
