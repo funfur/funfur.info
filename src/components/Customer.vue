@@ -24,7 +24,7 @@ export default {
         },
         costs: {
           title: '가구장인, 전문가들이 만든 가구',
-          desc: '나무를 알고, 쓰는 사람의 용도를 아는 장인들이 만드는 가구. 내가 가장 오래 머무르는 나만의 공간만큼은 그런 가구들로 채워보세요.'
+          desc: '나무를 알고, 쓰는 사람의 용도를 아는 장인들이 만드는 가구. 가장 오래 머무르는 나만의 공간만큼은 그런 가구들로 채워보세요.'
         },
         corporate: {
           title: '나만을 위해 맞춰진 가구',
@@ -35,3 +35,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.service__card {
+  grid-gap: 48px !important;
+
+  .service__card--each {
+    text-align: center;
+  }
+}
+</style>
