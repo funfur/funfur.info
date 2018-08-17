@@ -8,9 +8,9 @@ import {globalVar} from '@/globalVar'
 import '@/style/style.scss'
 
 
+Vue.prototype.$http = axios
 Vue.use(VueScrollTo)
 Kakao.init(globalVar.kakaoKey)
-Vue.prototype.$http = axios
 
 
 new Vue({

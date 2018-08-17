@@ -1,5 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
+const Dotenv = require('dotenv-webpack')
 require('es6-promise').polyfill()
 
 module.exports = {
@@ -9,6 +10,9 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  plugins: [
+    new Dotenv()
+  ],
   module: {
     rules: [
       {

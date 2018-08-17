@@ -1,8 +1,8 @@
-# funfur-info
+# funfur.info
 
 > funfur.info
 
-[Hosted with Firebase](https://funfur-info.firebaseapp.com)
+[Hosted with Firebase](https://funfur-info.firebaseapp.com/)
 
 ## Build Setup
 
