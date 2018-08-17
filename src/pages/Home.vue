@@ -5,6 +5,7 @@
     Service.section__each
     Stats.section__each
     Video.section__each
+    Customer.section__each
     News.section__each
     Download.section__each
     Contact.section__each
@@ -18,6 +19,7 @@ import Hero from '@/components/Hero'
 import Service from '@/components/Service'
 import Stats from '@/components/Stats'
 import Video from '@/components/Video'
+import Customer from '@/components/Customer'
 import News from '@/components/News'
 import Download from '@/components/Download'
 import Contact from '@/components/Contact'
@@ -32,6 +34,7 @@ export default {
     Service,
     Stats,
     Video,
+    Customer,
     News,
     Download,
     Contact,

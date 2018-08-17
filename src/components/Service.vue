@@ -1,7 +1,7 @@
 <template lang="pug">
   div#service
     div.container
-      h1.service__title 뻔뻐와 함께한다면
+      h1.service__title 뻔뻐에 입점한다면
 
       div.service__card
         div.service__card--each(
