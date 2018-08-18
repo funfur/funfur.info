@@ -6,7 +6,6 @@
       )
         h3.stats__count {{ value.count | numberFormat }}
         p.stats__title {{ value.title }}
-
       //- p(
       //-   style="color:red"
       //- ) {{ user.id }}
