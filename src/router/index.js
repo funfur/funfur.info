@@ -25,17 +25,17 @@ const router = new VueRouter({
       redirect: '/'
     },
     {
-      path: '/privacy',
+      path: '/tos/privacy',
       name: 'privacy',
       component: Privacy
     },
     {
-      path: '/terms-product',
+      path: '/tos/terms-product',
       name: 'term-product',
       component: TermsProduct
     },
     {
-      path: '/terms-site',
+      path: '/tos/terms-site',
       name: 'term-site',
       component: TermsSite
     }

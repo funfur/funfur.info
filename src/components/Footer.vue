@@ -12,7 +12,7 @@
       p.footer__terms
         router-link.footer__terms-each(
           :key="key"
-          :to="value"
+          :to="'tos/' + value"
           target="_blank"
           v-tooltip.bottom="{content: key + '(새 탭)', delay: {show: 500, hide: 100}}"
           v-for="(value, key) in tos"
@@ -28,7 +28,7 @@ export default {
     return {
       year: '',
       infoList: [
-        '사업자등록번호: 435-15-00646',
+        '사업자등록번호: ' + process.env.COMPANY_ID,
         '대표이사: 유덕열',
         '대표전화: ' + globalVar.callTo,
         '팩스: ' + globalVar.faxNumb,
