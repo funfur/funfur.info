@@ -39,6 +39,10 @@
           margin-top: -#{$grid4x};
           @include font-stack-html();
 
+          @media #{$ie} {
+            margin-top: $grid2x !important;
+          }
+
           @supports (-ms-ime-align:auto) {
             margin-top: $grid2x !important;
           }
