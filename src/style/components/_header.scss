@@ -51,20 +51,21 @@
 
   .header__right {
     float: right;
+    transform: translate(0, 50%);
 
     .header__right--link {
       font-weight: 900;
       display: inline-block;
+      vertical-align: middle;
       transition: color .25s ease;
-      transform: translate(0, 55%);
     }
 
     .header__right--icon {
       outline: none;
       color: $textccc;
       margin-left: $grid8x;
+      vertical-align: middle;
       transition: color .25s ease;
-      transform: translate(0, 65%);
       @include font-size($grid6x);
 
       @media #{$pablet} {

@@ -6,17 +6,10 @@
   }
 
   .service__card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: $grid8x;
-
-    @media #{$tablet} {
-      grid-gap: $grid8x;
-    }
+    @include grid-layout(3, 100px, $grid8x);
 
     @media #{$landsc} {
-      grid-template-columns: repeat(1, 1fr);
+      @include grid-layout(1, 100px, $grid8x);
     }
 
     .service__card--each {
@@ -28,7 +21,7 @@
         background-position: center center;
         @include border-radius($grid2x);
 
-
+        // set each images
         $BaseURI: '/src/assets/dist/service_img';
 
         @for $i from 0 through 2{

@@ -33,7 +33,7 @@ export default {
           title: '앱스토어 평점'
         }
       },
-      user: null
+      // user: []
     }
   },
   filters: {
