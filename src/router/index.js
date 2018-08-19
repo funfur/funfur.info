@@ -13,6 +13,7 @@ Vue.use(Meta)
 
 
 const router = new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',
