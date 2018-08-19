@@ -11,7 +11,7 @@ import '@/style/style.scss'
 Vue.prototype.$http = axios
 Vue.use(VueScrollTo)
 Vue.use(VTooltip)
-Kakao.init(globalVar.kakaoKey)
+Kakao.init(process.env.KAKAO_KEY)
 
 
 new Vue({

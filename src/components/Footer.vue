@@ -14,7 +14,7 @@
           :key="key"
           :to="value"
           target="_blank"
-          v-tooltip.bottom="key + '(새 탭)'"
+          v-tooltip.bottom="{content: key + '(새 탭)', delay: {show: 500, hide: 100}}"
           v-for="(value, key) in tos"
         ) {{ key }}
 </template>

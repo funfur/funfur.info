@@ -16,9 +16,5 @@ export const globalVar = new Vue ({
     // youtube info
     youtubeID: '_Zl1pThOZBs',
     youtubeTitle: 'D.Blik 가구 디자이너 이영찬',
-
-    // kakao api
-    kakaoKey: process.env.KAKAO_KEY,
-    kakaoID: process.env.KAKAO_ID
   }
 })

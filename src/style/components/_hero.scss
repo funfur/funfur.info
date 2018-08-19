@@ -91,14 +91,15 @@ $baseURI: '/src/assets/dist/hero.jpg';
         background-color: $brand-yellow;
 
         &:hover {
-          color: $brand-yellow;
-          background-color: #fff;
+          color: #fff;
+          background-color: $brand-yellow;
         }
       }
 
       &:hover {
-        color: #fff;
-        background-color: $brand-yellow;
+        color: $brand-yellow;
+        background-color: #fff;
+        opacity: .64;
       }
     }
   }
