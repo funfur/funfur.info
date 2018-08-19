@@ -48,6 +48,7 @@
     margin-top: $grid8x;
     color: $brand-yellow;
     background-color: #fff;
+    -webkit-transition: all .25s ease;
     transition: all .25s ease;
     border: 2px solid $brand-yellow;
     @include border-radius();
