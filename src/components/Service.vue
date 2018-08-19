@@ -16,9 +16,10 @@
         a.global__cta--link(
           :href="baseURI"
           target="_blank"
-          title="뻔뻐 입점신청 페이지(새 탭)"
         )
-          button.global__cta--btn 입점신청하기
+          button.global__cta--btn(
+          ) 입점신청하기
+            //- v-tooltip.bottom="'뻔뻐 입점신청 페이지(새 탭)'"
 </template>
 
 <script>

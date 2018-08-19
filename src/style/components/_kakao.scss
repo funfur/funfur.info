@@ -23,10 +23,10 @@
       cursor: pointer;
       border-radius: $grid8x;
       transition: all .25s ease;
-      @include box-shadow($grid2x, $grid3x, $black08);
+      @include box-shadow($grid3x, $grid4x, $black08);
 
       &:hover {
-        @include box-shadow($grid2x, $grid3x, $black16);
+        @include box-shadow($grid3x, $grid4x, $black16);
       }
     }
   }

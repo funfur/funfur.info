@@ -19,7 +19,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        @include border-radius($grid2x);
+        // @include border-radius($grid);
 
         // set each images
         $BaseURI: '/src/assets/dist/service_img';

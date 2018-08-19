@@ -14,7 +14,7 @@
           :key="key"
           :to="value"
           target="_blank"
-          :title="key + '(새 탭)'"
+          v-tooltip.bottom="key + '(새 탭)'"
           v-for="(value, key) in tos"
         ) {{ key }}
 </template>

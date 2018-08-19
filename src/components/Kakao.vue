@@ -1,7 +1,7 @@
 <template lang="pug">
   div#plusfriend-addfriend-button
     img(
-      title="카카오톡 문의하기"
+      v-tooltip.left="'카카오톡 문의하기'"
       @click="plusFriendChat"
       src="/src/assets/dist/kakao.svg"
     )

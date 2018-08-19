@@ -8,9 +8,10 @@
         a.global__cta--link(
           :href="baseURI"
           target="_blank"
-          title="창업일보(새 탭)"
         )
-          button.global__cta--btn.ghost__white 자세히 보기
+          button.global__cta--btn.ghost__white(
+          ) 자세히 보기
+            //- v-tooltip.bottom="'창업일보(새 탭)'"
 </template>
 
 <script>

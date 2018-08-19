@@ -9,7 +9,7 @@
           :key="key"
           target="_blank"
           :href="value.href"
-          :title="value.title"
+          v-tooltip.bottom="value.title"
         )
           img.download__badge--each(
             :src="value.src"
