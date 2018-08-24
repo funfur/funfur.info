@@ -2,7 +2,7 @@
   div#footer
     div.container
       p.footer__copyright
-        | © {{thisYear}}. (주)뻔뻔한친구들. All Rights Reserved.
+        | © {{thisYear}}. (주){{companyName}}. All Rights Reserved.
 
       p.footer__info
         span.footer__info-each(
@@ -25,12 +25,13 @@ export default {
   data () {
     return {
       year: '',
+      companyName: process.env.COMPANY_NAME,
       infoList: [
         '사업자등록번호: ' + process.env.COMPANY_ID,
-        '대표이사: 유덕열',
+        '대표이사: ' + process.env.CEO_NAME,
         '대표전화: ' + process.env.CALL_TO,
         '팩스: ' + process.env.FAX_TO,
-        '주소: 서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호 (04763)'
+        '주소: ' + process.env.COMPANY_ADDRESS
       ],
       tos: {
         개인정보처리방침: 'privacy',

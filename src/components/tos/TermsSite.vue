@@ -3,7 +3,7 @@
     div.terms-wrapper
       h1 {{ pageTitle }}
       h3 제 1 조 (목적)
-      p 이 약관은 회사 뻔뻔한친구들(이하 "회사"라 합니다)이 제공하는 뻔뻐 서비스(이하 "서비스"라 합니다)와 관련하여, 회사와 이용 고객간에 서비스의 이용조건 및 절차, 회사와 회원간의 권리, 의무 및 기타 필요한 사항을 규정함을 목적으로 합니다. 본 약관은 PC통신, 스마트폰(안드로이드폰, 아이폰 등) 앱 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 준용됩니다.
+      p 이 약관은 회사 {{companyName}}(이하 "회사"라 합니다)이 제공하는 뻔뻐 서비스(이하 "서비스"라 합니다)와 관련하여, 회사와 이용 고객간에 서비스의 이용조건 및 절차, 회사와 회원간의 권리, 의무 및 기타 필요한 사항을 규정함을 목적으로 합니다. 본 약관은 PC통신, 스마트폰(안드로이드폰, 아이폰 등) 앱 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 준용됩니다.
 
       h3 제 2 조 (용어의 정의)
       ol
@@ -124,7 +124,7 @@
         li 본 조에 따른 세부절차는 정보통신망법 및 저작권법이 규정한 범위 내에서 회사가 정한 게시중단요청서비스에 따릅니다.
 
       ul
-        li 게시중단요청: funfurofficial@gmail.com
+        li 게시중단요청: {{mailTo}}
 
       h3 제 13 조 (이용제한 등)
       ol
@@ -229,14 +229,15 @@
 </template>
 
 <script>
-import Footer from '@components/Footer'
 import CloseBtn from '@components/misc/CloseBtn'
 
 export default {
   name: 'term-site',
   data () {
     return {
-      pageTitle: '사장님사이트이용약관'
+      pageTitle: '사장님사이트이용약관',
+      mailTo: process.env.MAIL_TO,
+      companyName: process.env.COMPANY_NAME,
     }
   },
   metaInfo: {
@@ -244,7 +245,6 @@ export default {
     titleTemplate: '%s - 사장님사이트이용약관',
   },
   components: {
-    Footer,
     CloseBtn
   }
 }
