@@ -22,8 +22,6 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
-
 export default {
   name: 'download',
   data () {
@@ -32,12 +30,12 @@ export default {
         ios: {
           src: '/src/assets/dist/appstore.svg',
           title: 'iPhone 앱스토어 다운받기',
-          href: globalVar.iosURI
+          href: process.env.IOS_STORE
         },
         android: {
           src: '/src/assets/dist/playstore.svg',
           title: 'Android 구글 플레이스토어 다운받기',
-          href: globalVar.androidURI
+          href: process.env.ANDROID_STORE
         }
       }
     }

@@ -20,8 +20,6 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
-
 export default {
   name: 'footer-el',
   data () {
@@ -30,8 +28,8 @@ export default {
       infoList: [
         '사업자등록번호: ' + process.env.COMPANY_ID,
         '대표이사: 유덕열',
-        '대표전화: ' + globalVar.callTo,
-        '팩스: ' + globalVar.faxNumb,
+        '대표전화: ' + process.env.CALL_TO,
+        '팩스: ' + process.env.FAX_TO,
         '주소: 서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호 (04763)'
       ],
       tos: {

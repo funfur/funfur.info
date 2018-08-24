@@ -23,13 +23,11 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
-
 export default {
   name: 'service',
   data () {
     return {
-      baseURI: globalVar.registerURI,
+      baseURI: process.env.CEO_REGISTER_URL,
       serviceList: {
         upload: {
           title: '5분만에 끝내는 제품업로드',

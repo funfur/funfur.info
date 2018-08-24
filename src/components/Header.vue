@@ -28,14 +28,12 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
-
 export default {
   name: 'header-el',
   data () {
     return {
       scrolled: false,
-      baseURI: globalVar.registerURI,
+      baseURI: process.env.CEO_REGISTER_URL,
       snsIconList: {
         Twitter: {
           href : 'www.instagram.com/funfurofficial/',

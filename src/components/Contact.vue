@@ -28,8 +28,6 @@
 </template>
 
 <script>
-import {globalVar} from '@/globalVar'
-
 export default {
   name: 'contact',
   data () {
@@ -37,12 +35,12 @@ export default {
       contactList: {
         call: {
           class: 'phone',
-          href: 'tel:' + globalVar.callTo,
-          text: globalVar.callTo
+          href: 'tel:' + process.env.CALL_TO,
+          text: process.env.CALL_TO
         },
         link: {
           class: 'globe',
-          href: globalVar.baseURI,
+          href: process.env.CEO_URL,
           text: '사장님 사이트 방문하기'
         }
       },
