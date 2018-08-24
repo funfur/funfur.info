@@ -90,7 +90,7 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true,
     overlay: true,
-    port: 8080
+    port: 5000
   },
   performance: {
     hints: false
