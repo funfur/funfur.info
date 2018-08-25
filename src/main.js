@@ -5,6 +5,7 @@ import axios from 'axios'
 import VueScrollTo from 'vue-scrollto'
 import VTooltip from 'v-tooltip'
 import {globalVar} from '@/globalVar'
+
 import '@/style/style.scss'
 
 

@@ -28,21 +28,23 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'header-el',
   data () {
     return {
       scrolled: false,
-      baseURI: process.env.CEO_REGISTER_URL,
+      baseURI: globalVar.ceoRegisterWebsiteUrl,
       snsIconList: {
-        Twitter: {
-          href : 'www.instagram.com/funfurofficial/',
+        instagram: {
+          href : globalVar.companyInstagram,
           iconID : 'icIcon',
           iconClass : 'instagram',
           title: '뻔뻐 인스타그램(새 탭)'
         },
-        GitHub: {
-          href : 'www.facebook.com/funfur0fficial/',
+        facebook: {
+          href : globalVar.companyFacebook,
           iconID : 'fbIcon',
           iconClass : 'facebook-square',
           title: '뻔뻐 페이스북(새 탭)'

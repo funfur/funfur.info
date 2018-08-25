@@ -3,7 +3,7 @@
     div.terms-wrapper
       h1 {{ pageTitle }}
       h3 1. 개인정보의 처리 목적
-      p <{{companyName}}>('{{ceoURL}}' 이하 '{{companyName}} 사장님사이트') 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
+      p <{{companyName}}>('{{ceoWebsiteUrl}}' 이하 '{{companyName}} 사장님사이트') 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
       ul
         li 고객 가입의사 확인, 고객에 대한 서비스 제공에 따른 본인 식별/인증, 회원자격 유지/관리, 물품 또는 서비스 공급에 따른 금액 결제, 물품 또는 서비스의 공급/배송 등
 
@@ -24,7 +24,7 @@
 
       h3 4. 정보주체의 권리,의무 및 그 행사방법 이용자는 개인정보주체로서 다음과 같은 권리를 행사할 수 있습니다.</h3>
       ol
-        li 정보주체는 <기관/회사명>('{{ceoURL}}'이하 '사이트명') 에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
+        li 정보주체는 <기관/회사명>('{{ceoWebsiteUrl}}'이하 '사이트명') 에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
           ol
             li 개인정보 열람요구
             li 오류 등이 있을 경우 정정 요구
@@ -41,7 +41,7 @@
       h3 6. 개인정보의 파기
       p '{{companyName}} 사장님사이트'은(는) 원칙적으로 개인정보 처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.
       ul
-        li 파기절차이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류) 내부 방침 및 기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.-파기기한이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에, 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.
+        li 파기절차이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류) 내부 방침 및 기타 관련 법령에 따라 일정기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다. 파기기한이용자의 개인정보는 개인정보의 보유기간이 경과된 경우에는 보유기간의 종료일로부터 5일 이내에, 개인정보의 처리 목적 달성, 해당 서비스의 폐지, 사업의 종료 등 그 개인정보가 불필요하게 되었을 때에는 개인정보의 처리가 불필요한 것으로 인정되는 날로부터 5일 이내에 그 개인정보를 파기합니다.
 
       h3 7. 개인정보의 안전성 확보 조치
       p '{{companyName}} 사장님사이트'은(는) 개인정보보호법 제29조에 따라 다음과 같이 안전성 확보에 필요한 기술적/관리적 및 물리적 조치를 하고 있습니다.
@@ -77,6 +77,7 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
 import CloseBtn from '@components/misc/CloseBtn'
 
 export default {
@@ -84,11 +85,11 @@ export default {
   data () {
     return {
       pageTitle: '개인정보처리방침',
-      companyName: process.env.COMPANY_NAME,
-      ceoName: process.env.CEO_NAME,
-      ceoURL: process.env.CEO_URL,
-      callTo: process.env.CALL_TO,
-      mailTo: process.env.MAIL_TO
+      companyName: globalVar.companyName,
+      ceoName: globalVar.ceoName,
+      ceoWebsiteUrl: globalVar.ceoWebsiteUrl,
+      callTo: globalVar.callTo,
+      mailTo: globalVar.mailTo
     }
   },
   metaInfo: {

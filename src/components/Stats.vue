@@ -52,7 +52,6 @@ export default {
   //       console.log(error)
   //       this.errored = true
   //     })
-  //     .finally(() => console.log(this.user.id))
   // }
 }
 </script>

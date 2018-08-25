@@ -68,10 +68,10 @@
           ol
             li "회사"는 다음과 같은 사유가 있는 경우, 이용계약을 해지할 수 있습니다. 이 경우 "회사"는 "회원"에게 전자우편, 전화, 팩스 기타의 방법을 통하여 해지사유를 밝혀 해지의사를 통지합니다. 다만, "회사"는 해당 "회원"에게 해지사유에 대한 의견진술의 기회를 부여 할 수 있습니다.
               ol
-                li &nbsp;제7조 제2항에서 정하고 있는 이용계약의 승낙거부사유가 있음이 확인된 경우
-                li &nbsp;"회원"이 "회사"나 다른 회원 기타 타인의 권리나 명예, 신용 기타 정당한 이익을 침해하는 행위를 한 경우
-                li &nbsp;기타 "회원"이 이 약관 및 "회사"의 정책에 위배되는 행위를 하거나 이 약관에서 정한 해지사유가 발생한 경우
-                li &nbsp;1년 이상 서비스를 이용한 이력이 없는 경우
+                li 제7조 제2항에서 정하고 있는 이용계약의 승낙거부사유가 있음이 확인된 경우
+                li "회원"이 "회사"나 다른 회원 기타 타인의 권리나 명예, 신용 기타 정당한 이익을 침해하는 행위를 한 경우
+                li 기타 "회원"이 이 약관 및 "회사"의 정책에 위배되는 행위를 하거나 이 약관에서 정한 해지사유가 발생한 경우
+                li 1년 이상 서비스를 이용한 이력이 없는 경우
                 li 이용계약은 "회사"가 해지의사를 "회원"에게 통지함으로써 종료됩니다. 이 경우 "회사"가 해지의사를 "회원"이 등록한 전자우편주소로 발송하거나 "회사" 게시판에 게시함으로써 통지에 갈음합니다.
 
       h3 제 9 조 (회원의 ID 및 비밀번호에 대한 의무)
@@ -229,6 +229,7 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
 import CloseBtn from '@components/misc/CloseBtn'
 
 export default {
@@ -236,8 +237,8 @@ export default {
   data () {
     return {
       pageTitle: '사장님사이트이용약관',
-      mailTo: process.env.MAIL_TO,
-      companyName: process.env.COMPANY_NAME,
+      mailTo: globalVar.mailTo,
+      companyName: globalVar.companyName
     }
   },
   metaInfo: {

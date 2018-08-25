@@ -8,13 +8,12 @@
         :key="key"
         target="_blank"
         :href="value.href"
-        )
+      )
         i.contact__info.fa(
           aria-hidden="true"
           :class="'fa-' + value.class"
         )
-          p.contact__text(
-          ) {{ value.text }}
+          p.contact__text {{ value.text }}
 
       a.contact__each#plusfriend-addfriend-button(
         @click="plusFriendChat"
@@ -23,11 +22,12 @@
           aria-hidden="true"
           :class="'fa-' + kakao.class"
         )
-          p.contact__text(
-          ) {{ kakao.text }}
+          p.contact__text {{ kakao.text }}
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'contact',
   data () {
@@ -35,12 +35,12 @@ export default {
       contactList: {
         call: {
           class: 'phone',
-          href: 'tel:' + process.env.CALL_TO,
-          text: process.env.CALL_TO
+          href: 'tel:' + globalVar.callTo,
+          text: globalVar.callTo
         },
         link: {
           class: 'globe',
-          href: process.env.CEO_URL,
+          href: globalVar.ceoWebsiteUrl,
           text: '사장님 사이트 방문하기'
         }
       },

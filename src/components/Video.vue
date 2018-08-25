@@ -4,7 +4,7 @@
       h1.video__title {{ title }}
       h3.video__subtitle {{ subtitle }}
       youtube.video__body(
-        :video-id="videoID"
+        :video-id="videoId"
       )
 </template>
 
@@ -19,8 +19,8 @@ export default {
   name: 'video-el',
   data () {
     return {
-      videoID: globalVar.youtubeID,
-      url: 'https://youtu.be/' + globalVar.youtubeID,
+      videoId: globalVar.youtubeId,
+      url: 'https://youtu.be/' + globalVar.youtubeId,
       title: '뻔뻐 × 공방 작가님',
       subtitle: globalVar.youtubeTitle
     }

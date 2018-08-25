@@ -30,11 +30,13 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'hero',
   data () {
     return {
-      baseURI: process.env.CEO_REGISTER_URL
+      baseURI: globalVar.ceoRegisterWebsiteUrl
     }
   }
 }

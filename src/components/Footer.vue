@@ -20,18 +20,20 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'footer-el',
   data () {
     return {
       year: '',
-      companyName: process.env.COMPANY_NAME,
+      companyName: globalVar.companyName,
       infoList: [
-        '사업자등록번호: ' + process.env.COMPANY_ID,
-        '대표이사: ' + process.env.CEO_NAME,
-        '대표전화: ' + process.env.CALL_TO,
-        '팩스: ' + process.env.FAX_TO,
-        '주소: ' + process.env.COMPANY_ADDRESS
+        '사업자등록번호: ' + globalVar.companyId,
+        '대표이사: ' + globalVar.ceoName,
+        '대표전화: ' + globalVar.callTo,
+        '팩스: ' + globalVar.faxTo,
+        '주소: ' + globalVar.companyAddress
       ],
       tos: {
         개인정보처리방침: 'privacy',
