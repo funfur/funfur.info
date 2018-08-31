@@ -4,16 +4,23 @@ import router from '@/router'
 import axios from 'axios'
 import VueScrollTo from 'vue-scrollto'
 import VTooltip from 'v-tooltip'
+import * as VueGoogleMaps from 'vue2-google-maps'
 import {globalVar} from '@/globalVar'
 
 import '@/style/style.scss'
 
-
 Vue.prototype.$http = axios
 Vue.use(VueScrollTo)
 Vue.use(VTooltip)
-Kakao.init(process.env.KAKAO_KEY)
 
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: process.env.GOOGLE_API,
+    libraries: 'places',
+  },
+})
+
+Kakao.init(process.env.KAKAO_KEY)
 
 new Vue({
   el: '#app',

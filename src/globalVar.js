@@ -8,6 +8,9 @@ export const globalVar = new Vue ({
     companyNameShort: '뻔뻐',
     ceoName: '유덕열',
 
+    lat: '37.557196',
+    lng: '127.046406',
+
     callTo: '050-6591-6200',
     faxTo: '0504-433-6202',
     mailTo: 'official@funfur.kr',

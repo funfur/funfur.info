@@ -20,7 +20,8 @@
     "vue-meta": "^1.5.2",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.11.0",
-    "vue-youtube": "^1.2.5"
+    "vue-youtube": "^1.2.5",
+    "vue2-google-maps": "^0.10.2"
   },
   "browserslist": [
     "> 1%",

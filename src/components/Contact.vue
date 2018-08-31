@@ -2,7 +2,6 @@
   div#contact
     h1.contact__title 무엇이든 물어보세요
     div.container
-
       a.contact__each(
         v-for="(value, key) in contactList"
         :key="key"
@@ -23,10 +22,13 @@
           :class="'fa-' + kakao.class"
         )
           p.contact__text {{ kakao.text }}
+
+    GoogleMaps
 </template>
 
 <script>
 import {globalVar} from '@/globalVar'
+import GoogleMaps from '@/components/misc/GoogleMaps'
 
 export default {
   name: 'contact',
@@ -58,6 +60,14 @@ export default {
         plusFriendId: process.env.KAKAO_URL
       })
     }
-  }
+  },
+
+  components: {
+    GoogleMaps
+  },
 }
 </script>
+
+<style lang="scss">
+
+</style>
