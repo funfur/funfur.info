@@ -32,6 +32,7 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'header-el',
+
   data () {
     return {
       scrolled: false,

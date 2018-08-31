@@ -82,6 +82,7 @@ import CloseBtn from '@components/misc/CloseBtn'
 
 export default {
   name: 'privacy',
+
   data () {
     return {
       pageTitle: '개인정보처리방침',
@@ -94,12 +95,19 @@ export default {
       faxTo: globalVar.faxTo
     }
   },
+
   metaInfo: {
     title: '모바일 가구거리, 뻔뻐',
     titleTemplate: '%s - 개인정보처리방침',
   },
+
   components: {
     CloseBtn
+  },
+
+  updated () {
+    window.postMessage(document.title)
+    console.log(document.title)
   }
 }
 </script>

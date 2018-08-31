@@ -26,6 +26,7 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'download',
+
   data () {
     return {
       badges: {

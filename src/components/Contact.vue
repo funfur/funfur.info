@@ -30,6 +30,7 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'contact',
+
   data () {
     return {
       contactList: {
@@ -50,6 +51,7 @@ export default {
       }
     }
   },
+
   methods: {
     plusFriendChat() {
       Kakao.PlusFriend.chat({

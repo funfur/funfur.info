@@ -16,6 +16,7 @@
 <script>
 export default {
   name: 'news',
+
   data () {
     return {
       baseURI: 'http://www.news33.net/news/articleView.html?idxno=20850',

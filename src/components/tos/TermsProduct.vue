@@ -141,6 +141,7 @@ import CloseBtn from '@components/misc/CloseBtn'
 
 export default {
   name: 'term-product',
+
   data () {
     return {
       pageTitle: '제품판매이용약관',
@@ -148,12 +149,19 @@ export default {
       companyName: globalVar.companyName,
     }
   },
+
   metaInfo: {
     title: '모바일 가구거리, 뻔뻐',
     titleTemplate: '%s - 제품판매이용약관',
   },
+
   components: {
     CloseBtn
+  },
+
+  updated () {
+    window.postMessage(document.title)
+    console.log(document.title)
   }
 }
 </script>

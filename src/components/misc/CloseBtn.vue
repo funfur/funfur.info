@@ -10,10 +10,12 @@
 <script>
 export default {
   name: 'closebtn',
+
   methods: {
     closeWindow () {
       window.open("about:blank","_self").close()
+      window.postMessage('close')
     }
-  }
+  },
 }
 </script>

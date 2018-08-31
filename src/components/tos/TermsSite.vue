@@ -94,6 +94,7 @@ import CloseBtn from '@components/misc/CloseBtn'
 
 export default {
   name: 'term-site',
+
   data () {
     return {
       pageTitle: '사장님사이트이용약관',
@@ -107,12 +108,19 @@ export default {
       faxTo: globalVar.faxTo
     }
   },
+
   metaInfo: {
     title: '모바일 가구거리, 뻔뻐',
     titleTemplate: '%s - 사장님사이트이용약관',
   },
+
   components: {
     CloseBtn
+  },
+
+  updated () {
+    window.postMessage(document.title)
+    console.log(document.title)
   }
 }
 </script>

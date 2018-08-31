@@ -17,6 +17,7 @@ import numberFormat from '@/filters/numberFormat'
 
 export default {
   name: 'stats',
+
   data () {
     return {
       statsList: {

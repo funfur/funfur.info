@@ -27,6 +27,7 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'service',
+
   data () {
     return {
       baseURI: globalVar.ceoRegisterWebsiteUrl,

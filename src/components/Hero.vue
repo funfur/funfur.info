@@ -34,6 +34,7 @@ import {globalVar} from '@/globalVar'
 
 export default {
   name: 'hero',
+
   data () {
     return {
       baseURI: globalVar.ceoRegisterWebsiteUrl
