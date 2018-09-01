@@ -4,6 +4,7 @@ import router from '@/router'
 import axios from 'axios'
 import VueScrollTo from 'vue-scrollto'
 import VTooltip from 'v-tooltip'
+import VueProgressBar from 'vue-progressbar'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import {globalVar} from '@/globalVar'
 
@@ -12,6 +13,11 @@ import '@/style/style.scss'
 Vue.prototype.$http = axios
 Vue.use(VueScrollTo)
 Vue.use(VTooltip)
+Vue.use(VueProgressBar, {
+  color: '#ffbe19',
+  failedColor: 'red',
+  height: '2px'
+})
 
 Vue.use(VueGoogleMaps, {
   load: {
