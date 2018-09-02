@@ -38,7 +38,7 @@ const router = new VueRouter({
       path: '/tos/terms-site',
       name: 'term-site',
       component: TermsSite
-    }
+    },
   ]
 })
 
