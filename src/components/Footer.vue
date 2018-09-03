@@ -30,11 +30,13 @@ export default {
       year: '',
       companyName: globalVar.companyName,
       infoList: [
+        '상호명: ' + globalVar.companyNameFull,
         '사업자등록번호: ' + globalVar.companyId,
         '대표이사: ' + globalVar.ceoName,
         '대표전화: ' + globalVar.callTo,
         '팩스: ' + globalVar.faxTo,
-        '주소: ' + globalVar.companyAddress
+        '주소: ' + globalVar.companyAddress,
+        '이메일: ' + globalVar.mailTo,
       ],
       tos: {
         개인정보처리방침: 'privacy',

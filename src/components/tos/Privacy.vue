@@ -3,7 +3,7 @@
     div.terms-wrapper
       h1 {{ pageTitle }}
       h3 1. 개인정보의 처리 목적
-      p <{{companyName}}>('{{websiteUrl}}' 이하 '{{companyNameShort}}') 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
+      p <{{companyNameFull}}>('{{websiteUrl}}' 이하 '{{companyNameShort}}') 은(는) 다음의 목적을 위하여 개인정보를 처리하고 있으며, 다음의 목적 이외의 용도로는 이용하지 않습니다.
       ul
         li 고객 가입의사 확인, 고객에 대한 서비스 제공에 따른 본인 식별/인증, 회원자격 유지/관리, 물품 또는 서비스 공급에 따른 금액 결제, 물품 또는 서비스의 공급/배송 등
 
@@ -86,7 +86,7 @@ export default {
   data () {
     return {
       pageTitle: '개인정보처리방침',
-      companyName: '주식회사 ' + globalVar.companyName,
+      companyNameFull: globalVar.companyNameFull,
       companyNameShort: globalVar.companyNameShort,
       ceoName: globalVar.ceoName,
       websiteUrl: globalVar.websiteUrl,

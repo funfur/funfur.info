@@ -24,17 +24,21 @@
       font-weight: 900;
     }
 
+    .footer__info {
+      margin-top: -#{$grid2x} !important;
+    }
 
     .footer__info,
     .footer__terms {
       color: $text999;
-      margin-top: -#{$grid3x};
-      @include line-height($grid4x);
+      margin-top: -#{$grid2x};
+      @include line-height($grid3x);
 
 
-      .footer__terms {
-        margin-top: -#{$grid2x};
-      }
+      // .footer__terms {
+      //   display: inline-block;
+      //   margin-top: -#{$grid8x};
+      // }
 
       .footer__terms-each {
         color: $text999;
@@ -45,7 +49,11 @@
         }
 
         &:not(:first-child) {
-          margin-left: $grid2x;
+
+          &::before {
+            content: " | ";
+            color: $text999;
+          }
         }
       }
 
@@ -56,7 +64,6 @@
 
           &::before {
             content: " | ";
-            font-weight: 900;
           }
         }
       }
