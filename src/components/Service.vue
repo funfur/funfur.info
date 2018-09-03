@@ -1,7 +1,7 @@
 <template lang="pug">
   div#service
     div.container
-      h1.service__title 뻔뻐에 입점한다면
+      h1.service__title {{ $t('generic.title') }}에 입점한다면
 
       div.service__card
         div.service__card--each(
@@ -17,9 +17,7 @@
           :href="baseURI"
           target="_blank"
         )
-          button.global__cta--btn(
-          ) 입점신청하기
-            //- v-tooltip.bottom="'뻔뻐 입점신청 페이지(새 탭)'"
+          button.global__cta--btn {{ $t('generic.joinus') }}
 </template>
 
 <script>

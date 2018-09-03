@@ -2,6 +2,7 @@
 node_modules/
 .firebase/
 LEGACY/
+*.cache
 
 # Editor directories and files
 .idea

@@ -8,14 +8,14 @@
           v-scroll-to="'body'"
         )
           img.header__logo(src="/src/assets/dist/ic-launcher40.svg")
-          span.header__text 모바일 가구거리, <b>뻔뻐</b>
+          span.header__text 모바일 가구거리, <b>{{ $t('generic.title') }}</b>
 
       div.header__right
         a.header__right--link(
           :href="baseURI"
           target="_blank"
           v-tooltip="{content: '뻔뻐 입점신청 페이지(새 탭)', delay: {show: 500, hide: 100}}"
-        ) 입점신청하기
+        ) {{ $t('generic.joinus') }}
         a.header__right--icon(
           :key="key"
           target="_blank"

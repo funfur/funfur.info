@@ -1,7 +1,7 @@
 <template lang="pug">
   div#service
     div.container
-      h1.service__title 뻔뻐의 가구들은
+      h1.service__title {{ $t('generic.title') }}의 가구들은
 
       div.service__card
         div.service__card--each(

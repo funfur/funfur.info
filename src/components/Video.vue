@@ -1,7 +1,7 @@
 <template lang="pug">
   div#video
     div.container
-      h1.video__title {{ title }}
+      h1.video__title {{ $t('generic.title') }}{{ title }}
       h3.video__subtitle {{ subtitle }}
       youtube.video__body(
         :video-id="videoId"
@@ -21,7 +21,7 @@ export default {
     return {
       videoId: globalVar.youtubeId,
       url: 'https://youtu.be/' + globalVar.youtubeId,
-      title: '뻔뻐 × 공방 작가님',
+      title: ' × 공방 작가님',
       subtitle: globalVar.youtubeTitle
     }
   },
