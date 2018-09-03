@@ -55,3 +55,97 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+#header {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  height: $grid14x;
+  align-items: center;
+  background-color: #fff;
+  @include box-shadow($grid2x, $grid3x);
+
+  .header__left {
+    float: left;
+
+    a {
+      outline: none;
+      height: $grid14x;
+      padding: 0 $grid4x;
+      display: inline-block;
+      background-color: $brand-yellow;
+
+      .header__logo {
+        width: $grid10x;
+        transform: translate(0, 20%);
+      }
+
+      .header__text {
+        color: #fff;
+        margin-left: $grid3x;
+        display: inline-block;
+        transform: translate(0, -20%);
+      }
+    }
+
+    @media #{$middle} {
+      margin-left: -#{$grid4x};
+
+      a {
+        outline: none;
+        background-color: transparent;
+
+        .header__logo {
+          margin-left: -#{$grid};
+        }
+
+        .header__text {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .header__right {
+    float: right;
+    transform: translate(0, 25%);
+
+    .header__right--link {
+      font-weight: 900;
+      display: inline-block;
+      vertical-align: middle;
+      transition: color .25s ease;
+    }
+
+    .header__right--icon {
+      outline: none;
+      color: $textccc;
+      margin-left: $grid8x;
+      vertical-align: middle;
+      transition: color .25s ease;
+      @include font-size($grid6x);
+
+      @media #{$pablet} {
+        margin-left: $grid6x;
+      }
+
+      &.fa-instagram {
+
+        &:hover {
+          color: $color-ig;
+        }
+      }
+
+      &.fa-facebook-square {
+
+        &:hover {
+          color: $color-fb;
+        }
+      }
+    }
+  }
+}
+</style>

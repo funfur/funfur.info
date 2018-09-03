@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from '@/App.vue'
+import store from '@/store'
 import router from '@/router'
 import axios from 'axios'
 import VTooltip from 'v-tooltip'
@@ -9,8 +10,6 @@ import VueScrollReveal from 'vue-scroll-reveal'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import {globalVar} from '@/globalVar'
 
-import '@/style/style.scss'
-
 Vue.prototype.$http = axios
 
 Vue.use(VTooltip)
@@ -18,7 +17,6 @@ Vue.use(VueScrollTo)
 Vue.use(VueScrollReveal)
 Vue.use(VueProgressBar, {
   color: '#ffbe19',
-  failedColor: 'red',
   height: '2px'
 })
 
@@ -33,6 +31,7 @@ Kakao.init(process.env.KAKAO_KEY)
 
 new Vue({
   el: '#app',
+  store,
   router,
   render: h => h(App)
 })

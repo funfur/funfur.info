@@ -12,7 +12,7 @@ Vue.use(VueRouter)
 Vue.use(Meta)
 
 
-const router = new VueRouter({
+export default new VueRouter({
   mode: 'history',
   routes: [
     {
@@ -41,6 +41,3 @@ const router = new VueRouter({
     },
   ]
 })
-
-
-export default router

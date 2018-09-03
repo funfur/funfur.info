@@ -53,3 +53,79 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+#footer {
+  width: 100%;
+  height: $grid24x;
+  border-top: 1px solid $texteee;
+
+  .container {
+    padding: $grid8x 0;
+
+    @media #{$pablet} {
+      padding-bottom: $grid16x;
+    }
+
+
+    .footer__copyright,
+    .footer__info-each,
+    .footer__terms {
+      @include font-size($grid3x);
+      @include line-height($grid3x);
+    }
+
+
+    .footer__copyright {
+      color: $text333;
+      font-weight: 900;
+    }
+
+    .footer__info {
+      margin-top: -#{$grid2x} !important;
+    }
+
+    .footer__info,
+    .footer__terms {
+      color: $text999;
+      margin-top: -#{$grid2x};
+      @include line-height($grid3x);
+
+
+      // .footer__terms {
+      //   display: inline-block;
+      //   margin-top: -#{$grid8x};
+      // }
+
+      .footer__terms-each {
+        color: $text999;
+        transition: color .25s ease;
+
+        &:hover {
+          color: $text333;
+        }
+
+        &:not(:first-child) {
+
+          &::before {
+            content: " | ";
+            color: $text999;
+          }
+        }
+      }
+
+
+      .footer__info-each {
+
+        &:not(:first-child) {
+
+          &::before {
+            content: " | ";
+          }
+        }
+      }
+    }
+  }
+}
+</style>

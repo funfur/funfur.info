@@ -70,4 +70,62 @@ export default {
 
 <style lang="scss">
 
+#contact {
+  border-top: 1px solid $texteee;
+
+  .contact__title {
+    font-weight: 300;
+    margin-bottom: $grid12x;
+  }
+
+  .container {
+    text-align: center;
+    @include grid-layout();
+
+    @media #{$default} {
+      grid-gap: $grid20x;
+    }
+
+    @media #{$tablet} {
+      grid-gap: $grid4x;
+    }
+
+    @media #{$middle} {
+      @include grid-layout(1, $grid12x, $grid16x);
+    }
+
+    .contact__each {
+      color: $text999;
+      cursor: pointer;
+      transition: color .25s ease;
+
+      &:hover {
+        color: $brand-yellow;
+      }
+
+      .contact__info {
+        @include font-size($grid8x);
+
+        .contact__text {
+          margin-bottom: 0;
+          margin-top: -#{$grid4x};
+          @include font-stack-html();
+
+          @media #{$ie} {
+            margin-top: $grid2x !important;
+          }
+
+          @supports (-ms-ime-align:auto) {
+            margin-top: $grid2x !important;
+          }
+
+          &::before {
+            content: "\A";
+            white-space: pre;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

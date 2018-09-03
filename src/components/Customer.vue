@@ -39,7 +39,7 @@ export default {
 
 <style lang="scss" scoped>
 .service__card {
-  grid-gap: 48px !important;
+  grid-gap: $grid12x !important;
 
   .service__card--each {
     text-align: center;

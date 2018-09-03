@@ -49,3 +49,62 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+#service {
+
+  .service__title {
+    font-weight: 300;
+    margin-bottom: $grid8x;
+  }
+
+  .service__card {
+    @include grid-layout(3, 100px, $grid8x);
+
+    @media #{$landsc} {
+      @include grid-layout(1, 100px, $grid8x);
+    }
+
+    .service__card--each {
+
+      .service__card--img {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        // set each images
+        $BaseURI: '/src/assets/dist/service_img';
+
+        @for $i from 0 through 2{
+          &.img-#{$i} {
+            background-image: url('#{$BaseURI + $i}.jpg');
+          }
+        }
+      }
+
+      .service__card--title,
+      .service__card--text {
+        margin-top: $grid8x;
+
+        @media #{$pablet} {
+          margin-top: $grid4x;
+        }
+      }
+
+      .service__card--title {
+        margin: $grid4x 0 $grid6x;
+      }
+
+      .service__card--text {
+        margin: -#{$grid4x} 0 $grid6x 0;
+      }
+    }
+  }
+
+  .global__cta--btn {
+    @include box-shadow(0, 0, transparent);
+  }
+}
+</style>

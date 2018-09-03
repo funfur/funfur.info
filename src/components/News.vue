@@ -27,3 +27,39 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+
+#news {
+  background-color: $brand-yellow;
+
+  .news__title {
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .news__text,
+  .news__subtext {
+    color: #fff;
+    text-align: center;
+  }
+
+  .news__text {
+    font-weight: 900;
+    margin: -#{$grid2x} 0 0;
+    @include font-size($grid8x);
+    @include line-height($grid8x);
+
+    &::after,
+    &::before {
+      content: '"';
+    }
+  }
+
+  .news__subtext {
+    font-weight: 900;
+    margin: $grid4x 0 -#{$grid2x};
+    @include font-size($grid4x);
+  }
+}
+</style>
