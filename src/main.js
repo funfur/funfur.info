@@ -5,7 +5,9 @@ import store from '@/store'
 import router from '@/router'
 import VueI18n from 'vue-i18n'
 import VTooltip from 'v-tooltip'
+import Toasted from 'vue-toasted'
 import VueScrollTo from 'vue-scrollto'
+import VueClipboard from 'vue-clipboard2'
 import VueProgressBar from 'vue-progressbar'
 import VueScrollReveal from 'vue-scroll-reveal'
 import * as VueGoogleMaps from 'vue2-google-maps'
@@ -15,8 +17,10 @@ Vue.config.productionTip = false
 Vue.prototype.$http = axios
 
 Vue.use(VueI18n)
+Vue.use(Toasted)
 Vue.use(VTooltip)
 Vue.use(VueScrollTo)
+Vue.use(VueClipboard)
 Vue.use(VueScrollReveal)
 Vue.use(VueProgressBar, {
   color: '#ffbe19',

@@ -66,3 +66,9 @@
   }
 }
 
+
+
+.toasted.primary.default {
+  @include box-shadow($grid, $grid2x, $black16);
+  @include border-radius($grid16x !important);
+}

@@ -8,6 +8,11 @@
         span.footer__info-each(
           v-for="info in infoList"
         ) {{ info }}
+        span.footer__info-each.clipboard(
+          @click="toast"
+          v-clipboard:copy="mailTo"
+          v-tooltip.bottom="{content: '이메일 주소를 복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
+        ) 이메일: {{ mailTo }}
 
       p.footer__terms
         router-link.footer__terms-each(
@@ -29,6 +34,7 @@ export default {
     return {
       year: '',
       companyName: globalVar.companyName,
+      mailTo: globalVar.mailTo,
       infoList: [
         '상호명: ' + globalVar.companyNameFull,
         '사업자등록번호: ' + globalVar.companyId,
@@ -36,13 +42,22 @@ export default {
         '대표전화: ' + globalVar.callTo,
         '팩스: ' + globalVar.faxTo,
         '주소: ' + globalVar.companyAddress,
-        '이메일: ' + globalVar.mailTo,
       ],
       tos: {
         개인정보처리방침: 'privacy',
         제품판매이용약관: 'terms-product',
         사장님사이트이용약관: 'terms-site'
       }
+    }
+  },
+
+  methods: {
+    toast () {
+      this.$toasted.show('이메일 주소가 복사되었습니다', {
+        theme: "primary",
+        position: "bottom-center",
+        duration : 2000
+      })
     }
   },
 
@@ -60,14 +75,17 @@ export default {
   width: 100%;
   height: $grid24x;
   border-top: 1px solid $texteee;
+  padding: $grid8x 0 $grid12x;
+
+  @media #{$pablet} {
+    padding-bottom: $grid24x;
+  }
+
+  @media #{$mobile} {
+    padding-bottom: $grid40x;
+  }
 
   .container {
-    padding: $grid8x 0;
-
-    @media #{$pablet} {
-      padding-bottom: $grid16x;
-    }
-
 
     .footer__copyright,
     .footer__info-each,
@@ -117,6 +135,10 @@ export default {
 
 
       .footer__info-each {
+
+        &.clipboard {
+          cursor: pointer;
+        }
 
         &:not(:first-child) {
 
