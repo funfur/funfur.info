@@ -26,7 +26,7 @@ export const globalVar = new Vue ({
     companyInstagram: 'www.instagram.com/funfurofficial/',
     companyFacebook: 'www.facebook.com/funfur0fficial/',
 
-    youtubeId: '_Zl1pThOZBs',
-    youtubeTitle: 'D.Blik 가구 디자이너 이영찬',
+    youtubeId: 'dwpbjTwYIm4',
+    youtubeTitle: 'Wood4U 협동조합',
   }
 })
