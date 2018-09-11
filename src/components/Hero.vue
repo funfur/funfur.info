@@ -18,7 +18,9 @@
 
       div.global__cta
         <a class="global__cta--link" v-scroll-to="{el:'#download', offset: -54}">
-          button.global__cta--btn.brand--bg {{ $t('generic.download') }}
+          button.global__cta--btn.brand--bg(
+            v-ripple
+          ) {{ $t('generic.download') }}
         </a>
       div.global__cta
         a.global__cta--link(
@@ -26,7 +28,9 @@
           target="_blank"
           title="뻔뻐 입점신청 페이지(새 탭)"
         )
-          button.global__cta--btn {{ $t('generic.joinus') }}
+          button.global__cta--btn(
+            v-ripple
+          ) {{ $t('generic.joinus') }}
 </template>
 
 <script>

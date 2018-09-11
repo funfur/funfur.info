@@ -17,7 +17,9 @@
           :href="baseURI"
           target="_blank"
         )
-          button.global__cta--btn {{ $t('generic.joinus') }}
+          button.global__cta--btn(
+            v-ripple
+          ) {{ $t('generic.joinus') }}
 </template>
 
 <script>
