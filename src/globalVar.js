@@ -3,6 +3,7 @@ import Vue from 'vue'
 export const globalVar = new Vue ({
   data: {
     companyId: '435-15-00646',
+    companyItc: '2018-서울성동-1319',
     companyAddress: '서울특별시 성동구 왕십리로 222 한양대학교 HIT관 B234호 (04763)',
     companyName: '뻔뻔한친구들',
     companyNameFull: '주식회사 뻔뻔한친구들',

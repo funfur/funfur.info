@@ -44,6 +44,7 @@ export default {
       infoList: [
         '상호명: ' + globalVar.companyNameFull,
         '사업자등록번호: ' + globalVar.companyId,
+        '통신판매업: ' + globalVar.companyItc,
         '대표이사: ' + globalVar.ceoName,
         '대표전화: ' + globalVar.callTo,
         '팩스: ' + globalVar.faxTo,
