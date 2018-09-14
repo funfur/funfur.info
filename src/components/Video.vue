@@ -6,6 +6,14 @@
       youtube.video__body(
         :video-id="videoId"
       )
+
+    div.global__cta
+      a.global__cta--link(
+        :href="youtubeChannel"
+        target="_blank"
+      )
+        button.global__cta--btn(
+        ) {{ $t('generic.seeMore') }}
 </template>
 
 <script>
@@ -17,17 +25,21 @@ Vue.use(VueYoutube)
 
 export default {
   name: 'video-el',
+
   data () {
     return {
       videoId: globalVar.youtubeId,
       url: 'https://youtu.be/' + globalVar.youtubeId,
       title: ' × 공방 작가님',
-      subtitle: globalVar.youtubeTitle
+      subtitle: globalVar.youtubeTitle,
+      youtubeChannel: globalVar.youtubeChannel,
     }
   },
+
   components: {
     VueYoutube
-  }
+  },
+
 }
 </script>
 
@@ -63,6 +75,10 @@ export default {
     @media #{$pablet} {
       height: 240px;
     }
+  }
+
+  .global__cta--btn {
+    @include box-shadow(0, 0, transparent);
   }
 }
 </style>

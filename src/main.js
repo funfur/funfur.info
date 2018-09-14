@@ -17,6 +17,8 @@ Vue.use(VueI18n) // locale
 Vue.use(VTooltip)
 Vue.use(VueScrollTo)
 Vue.use(VueScrollReveal)
+
+Ripple.zIndex = 9999
 Vue.directive('ripple', Ripple)
 
 Kakao.init(process.env.KAKAO_KEY) // -> .env

@@ -26,7 +26,8 @@ export const globalVar = new Vue ({
     companyInstagram: 'www.instagram.com/funfurofficial/',
     companyFacebook: 'www.facebook.com/funfur0fficial/',
 
-    youtubeId: 'dwpbjTwYIm4',
+    youtubeId: 'tSNo4k-cJRI',
     youtubeTitle: 'Wood4U 협동조합',
+    youtubeChannel: 'https://www.youtube.com/channel/UCvDvQd369T3IGTaZOPXCxQQ',
   }
 })

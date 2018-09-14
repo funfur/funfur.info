@@ -18,7 +18,6 @@
           target="_blank"
         )
           button.global__cta--btn(
-            v-ripple
           ) {{ $t('generic.joinus') }}
 </template>
 
