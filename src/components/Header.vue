@@ -7,7 +7,9 @@
           v-tooltip="{content: '맨 위로', delay: {show: 500, hide: 100}}"
           v-scroll-to="'body'"
         )
-          img.header__logo(src="/src/assets/dist/ic-launcher40.svg")
+          img.header__logo(
+            src="/src/assets/dist/ic-launcher40.svg"
+          )
           span.header__text 모바일 가구거리, <b>{{ $t('generic.title') }}</b>
 
       div.header__right

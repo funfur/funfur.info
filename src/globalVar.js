@@ -22,7 +22,7 @@ export const globalVar = new Vue ({
     ceoRegisterWebsiteUrl: 'https://ceo.funfur.kr/register',
 
     iosStore: 'https://ceo.funfur.kr/',
-    androidStore: 'https://ceo.funfur.kr/',
+    androidStore: 'https://play.google.com/store/apps/details?id=kr.funfur.android.funfur',
 
     companyInstagram: 'www.instagram.com/funfurofficial/',
     companyFacebook: 'www.facebook.com/funfur0fficial/',
