@@ -2,9 +2,9 @@
   mixin default font
 ============================== */
 @mixin font-stack-html() {
-  font-family: 'Spoqa Han Sans', Sans-serif;
-  -moz-font-family: 'Spoqa Han Sans', Sans-serif;
   -webkit-font-family: 'Spoqa Han Sans', Sans-serif;
+     -moz-font-family: 'Spoqa Han Sans', Sans-serif;
+          font-family: 'Spoqa Han Sans', Sans-serif;
 }
 
 
@@ -13,9 +13,9 @@
 ============================== */
 @mixin font-settings() {
   direction: ltr;
-          font-feature-settings: 'liga';
-     -moz-font-feature-settings: 'liga';
   -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale !important;
    -webkit-font-smoothing: antialiased !important;
           text-rendering:  optimizeLegibility !important;
