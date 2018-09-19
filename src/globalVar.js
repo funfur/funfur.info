@@ -4,7 +4,7 @@ export const globalVar = new Vue ({
   data: {
     companyId: '435-15-00646',
     companyItc: '2018-서울성동-1319',
-    companyAddress: '서울특별시 성동구 왕십리로 222, 비234호 한양종합기술연구원 (04763)',
+    companyAddress: '서울특별시 성동구 왕십리로 222, 한양종합기술연구원 비234호 (04763)',
     companyName: '뻔뻔한친구들',
     companyNameFull: '주식회사 뻔뻔한친구들',
     companyNameShort: '뻔뻐',
@@ -21,7 +21,7 @@ export const globalVar = new Vue ({
     ceoWebsiteUrl: 'https://ceo.funfur.kr/',
     ceoRegisterWebsiteUrl: 'https://ceo.funfur.kr/register',
 
-    iosStore: 'https://ceo.funfur.kr/',
+    iosStore: 'https://itunes.apple.com/kr/app/funfur/id1436429392?l=ko&ls=1&mt=8',
     androidStore: 'https://play.google.com/store/apps/details?id=kr.funfur.android.funfur',
 
     companyInstagram: 'www.instagram.com/funfurofficial/',
