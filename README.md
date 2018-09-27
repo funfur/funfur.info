@@ -8,9 +8,9 @@
 
 ``` bash
 # install dependencies
-npm install
+npm i
 
-# image compresser
+# asset compresser
 gulp watch
 
 # serve with hot reload at localhost:5000
