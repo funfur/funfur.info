@@ -2,20 +2,20 @@
   div#footer
     div.container
       p.footer__copyright
-        | © {{thisYear}}. (주){{companyName}}. All Rights Reserved.
+        | ⓒ {{thisYear}}. (주){{companyName}}. All Rights Reserved.
 
       p.footer__info
-        span.footer__info-each(
+        span.footer__info--each(
           v-for="info in infoList"
         ) {{ info }}
-        span.footer__info-each.clipboard(
+        span.footer__info--each.clipboard(
           @click="toast"
           v-clipboard:copy="mailTo"
           v-tooltip.bottom="{content: '이메일 주소를 복사하려면 클릭하세요', delay: {show: 500, hide: 100}}"
         ) 이메일: {{ mailTo }}
 
       p.footer__terms
-        router-link.footer__terms-each(
+        router-link.footer__terms--each(
           :key="key"
           :to="'tos/' + value"
           target="_blank"
@@ -82,10 +82,10 @@ export default {
   width: 100%;
   height: $grid24x;
   border-top: 1px solid $texteee;
-  padding: $grid8x 0 $grid12x;
+  padding: $grid8x 0 $grid20x;
 
   @media #{$pablet} {
-    padding-bottom: $grid24x;
+    padding-bottom: $grid28x;
   }
 
   @media #{$mobile} {
@@ -95,7 +95,7 @@ export default {
   .container {
 
     .footer__copyright,
-    .footer__info-each,
+    .footer__info--each,
     .footer__terms {
       @include font-size($grid3x);
       @include line-height($grid3x);
@@ -108,22 +108,15 @@ export default {
     }
 
     .footer__info {
-      margin-top: -#{$grid2x} !important;
+      margin-top: 0 !important;
     }
 
     .footer__info,
     .footer__terms {
       color: $text999;
-      margin-top: -#{$grid2x};
       @include line-height($grid3x);
 
-
-      // .footer__terms {
-      //   display: inline-block;
-      //   margin-top: -#{$grid8x};
-      // }
-
-      .footer__terms-each {
+      .footer__terms--each {
         color: $text999;
         transition: color .25s ease;
 
@@ -141,7 +134,7 @@ export default {
       }
 
 
-      .footer__info-each {
+      .footer__info--each {
 
         &.clipboard {
           cursor: pointer;
