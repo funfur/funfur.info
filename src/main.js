@@ -21,9 +21,8 @@ Vue.use(VueRippler)
 Vue.use(VueScrollTo)
 Vue.use(VueScrollReveal)
 
-Kakao.init(process.env.KAKAO_KEY) // -> .env
+Kakao.init(process.env.KAKAO_KEY)
 
-// set locale
 Vue.use(VueI18n)
 import {messages} from './added'
 window.i18n = new VueI18n({
