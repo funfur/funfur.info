@@ -6,14 +6,10 @@
       )
         h3.stats__count {{ value.count | numberFormat }}
         p.stats__title {{ value.title }}
-      //- p(
-      //-   style="color:red"
-      //- ) {{ user.id }}
 </template>
 
 <script>
 import numberFormat from '@/filters/numberFormat'
-// import axios from 'axios'
 
 export default {
   name: 'stats',
@@ -34,26 +30,13 @@ export default {
           title: '앱스토어 평점'
         }
       },
-      // user: []
     }
   },
+
   filters: {
     numberFormat,
-    // formatting(num) {
-    //   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    // }
   },
-  // mounted () {
-  //   axios
-  //     .get('https://jsonplaceholder.typicode.com/users')
-  //     .then(response => {
-  //       this.user = response.data[0]
-  //     })
-  //     .catch(error => {
-  //       console.log(error)
-  //       this.errored = true
-  //     })
-  // }
+
 }
 </script>
 
