@@ -2,7 +2,7 @@ import Vue from 'vue'
 
 export const globalVar = new Vue ({
   data: {
-    companyId: '435-15-00646',
+    companyId: '687-88-00936',
     companyItc: '2018-서울성동-1319',
     companyAddress: '서울특별시 성동구 왕십리로 222, 한양종합기술연구원 비234호 (04763)',
     companyName: '뻔뻔한친구들',
