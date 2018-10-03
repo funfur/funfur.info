@@ -98,8 +98,8 @@ export default {
   },
 
   metaInfo: {
-    title: '모바일 가구거리, 뻔뻐',
-    titleTemplate: '%s - 개인정보처리방침',
+    title: '모바일 가구거리, 뻔뻐 - 개인정보처리방침',
+    titleTemplate: '%s',
   },
 
   components: {

@@ -153,8 +153,8 @@ export default {
   },
 
   metaInfo: {
-    title: '모바일 가구거리, 뻔뻐',
-    titleTemplate: '%s - 제품판매이용약관',
+    title: '모바일 가구거리, 뻔뻐 - 제품판매이용약관',
+    titleTemplate: '%s',
   },
 
   components: {
