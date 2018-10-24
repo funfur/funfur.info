@@ -7,6 +7,8 @@ import Privacy from '@components/tos/Privacy'
 import TermsProduct from '@components/tos/TermsProduct'
 import TermsSite from '@components/tos/TermsSite'
 
+import Qrcode from '@/pages/Qrcode'
+
 
 Vue.use(VueRouter)
 Vue.use(Meta)
@@ -18,7 +20,7 @@ export default new VueRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
     },
     {
       path: '*',
@@ -27,17 +29,22 @@ export default new VueRouter({
     {
       path: '/tos/privacy',
       name: 'privacy',
-      component: Privacy
+      component: Privacy,
     },
     {
       path: '/tos/terms-product',
       name: 'term-product',
-      component: TermsProduct
+      component: TermsProduct,
     },
     {
       path: '/tos/terms-site',
       name: 'term-site',
-      component: TermsSite
+      component: TermsSite,
+    },
+    {
+      path: '/qrcode',
+      name: 'qrcode',
+      component: Qrcode,
     },
   ]
 })
