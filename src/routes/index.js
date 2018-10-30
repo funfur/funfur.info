@@ -3,11 +3,12 @@ import VueRouter from 'vue-router'
 import Meta from 'vue-meta'
 
 import Home from '@/pages/Home'
-import Privacy from '@components/tos/Privacy'
-import TermsProduct from '@components/tos/TermsProduct'
-import TermsSite from '@components/tos/TermsSite'
+import Privacy from '@/pages/tos/Privacy'
+import TermsProduct from '@/pages/tos/TermsProduct'
+import TermsSite from '@/pages/tos/TermsSite'
 
 import Qrcode from '@/pages/Qrcode'
+import Notice from '@/pages/Notice'
 
 
 Vue.use(VueRouter)
@@ -45,6 +46,11 @@ export default new VueRouter({
       path: '/qrcode',
       name: 'qrcode',
       component: Qrcode,
+    },
+    {
+      path: '/notice',
+      name: 'notice',
+      component: Notice,
     },
   ]
 })
