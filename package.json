@@ -22,7 +22,7 @@
     "vue": "^2.5.11",
     "vue-clipboard2": "^0.2.1",
     "vue-i18n": "^8.1.0",
-    "vue-meta": "^1.5.3",
+    "vue-meta": "^1.5.5",
     "vue-progressbar": "^0.7.5",
     "vue-progressive-image": "^3.2.0",
     "vue-rippler": "^1.1.7",
