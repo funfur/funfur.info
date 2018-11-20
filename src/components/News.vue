@@ -1,12 +1,12 @@
 <template lang="pug">
   div#news
     div.container
-      h1.news__title {{newsTitle}}
-      p.news__text {{newsText}}
-      p.news__subtext {{newsSubtext}}
+      h1.news__title 뻔뻐 관련기사
+      p.news__text {{newsTitle}}
+      p.news__subtext @ {{newsProvider}}
       div.global__cta
         a.global__cta--link(
-          :href="baseURI"
+          :href="newsUrl"
           target="_blank"
         )
           button.global__cta--btn.ghost__white(
@@ -14,15 +14,16 @@
 </template>
 
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'news',
 
   data () {
     return {
-      baseURI: 'http://www.news33.net/news/articleView.html?idxno=20850',
-      newsTitle: '뻔뻐 관련기사',
-      newsText: '신뢰가 가는 가구구매 플랫폼',
-      newsSubtext: '창업일보기획: 스타트업列傳'
+      newsUrl: globalVar.newsUrl,
+      newsTitle: globalVar.newsTitle,
+      newsProvider: globalVar.newsProvider,
     }
   }
 }

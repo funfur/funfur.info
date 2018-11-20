@@ -21,6 +21,10 @@ export const globalVar = new Vue ({
     ceoWebsiteUrl: 'https://ceo.funfur.kr/',
     ceoRegisterWebsiteUrl: 'https://ceo.funfur.kr/register',
 
+    newsUrl: 'http://www.pointn.net/news/articleView.html?idxno=1368',
+    newsTitle: '가구 거리를 모바일로 옮겨온 뻔뻐',
+    newsProvider: '뉴스포인트',
+
     iosStore: 'https://itunes.apple.com/kr/app/funfur/id1436429392?l=ko&ls=1&mt=8',
     androidStore: 'https://play.google.com/store/apps/details?id=kr.funfur.android.funfur',
 
