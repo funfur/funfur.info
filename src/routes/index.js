@@ -9,6 +9,7 @@ import TermsSite from '@/pages/tos/TermsSite'
 
 import Qrcode from '@/pages/Qrcode'
 import Notice from '@/pages/Notice'
+import RedirectDL from '@/pages/RedirectDL'
 
 
 Vue.use(VueRouter)
@@ -51,6 +52,11 @@ export default new VueRouter({
       path: '/notice',
       name: 'notice',
       component: Notice,
+    },
+    {
+      path: '/redirectdl',
+      name: 'redirectdl',
+      component: RedirectDL,
     },
   ]
 })
