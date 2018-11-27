@@ -1,8 +1,6 @@
-<template lang="pug">
-  div
-</template>
-
 <script>
+import {globalVar} from '@/globalVar'
+
 export default {
   name: 'redirectdl',
   data () {
@@ -13,7 +11,7 @@ export default {
 
   created () {
     let userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if      (/windows phone/i.test(userAgent)) {
+    if (/windows phone/i.test(userAgent)) {
       this.userAgent = "Windows Phone"
     }
     else if (/android/i.test(userAgent)) {
@@ -26,24 +24,20 @@ export default {
   },
 
   mounted () {
-    let android = "https://play.google.com/store/apps/details?id=kr.funfur.android.funfur",
-        ios     = "https://itunes.apple.com/kr/app/funfur/id1436429392?l=ko&ls=1&mt=8",
-        unknown = "https://funfur.info/";
+    let android = globalVar.androidStore,
+        ios     = globalVar.iosStore,
+        unknown = globalVar.websiteUrl
 
     if      (this.userAgent == "Android")  window.location.href = android;
     else if (this.userAgent == "iOS")      window.location.href = ios;
     else if (this.userAgent == "Windows Phone") {
-        alert("안드로이드, iOS 운영체제에서만 다운로드 가능합니다.");
-        window.location.href = unknown;
+        alert("안드로이드, iOS 운영체제에서만 다운로드 가능합니다.")
+        window.location.href = unknown
     }
     else {
-        alert("안드로이드, iOS 운영체제에서만 다운로드 가능합니다.");
-        window.location.href = unknown;
+        alert("안드로이드, iOS 운영체제에서만 다운로드 가능합니다.")
+        window.location.href = unknown
     }
-  }
+  },
 }
 </script>
-
-<style lang="scss">
-
-</style>
