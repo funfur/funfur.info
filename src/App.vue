@@ -9,7 +9,7 @@ import Vue from 'vue'
 import VueProgressBar from 'vue-progressbar'
 
 Vue.use(VueProgressBar, {
-  color: '#ffbe19',
+  color: '#CAA888',
   height: '2px'
 })
 
