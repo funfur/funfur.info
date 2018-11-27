@@ -4,10 +4,10 @@
     div.hero__dim
     div.hero__wrapper
       p.hero__subtitle
-        | 스토리가 있는
+        | 작품이 되는
         span.hero__title--nbsp &nbsp;
         span.hero__br
-        | 디자이너 가구, <b>{{ $t('generic.title') }}</b>
+        | 원목가구를 만나다, <b>{{ $t('generic.title') }}</b>
       h1.hero__title
         | 공방가구의 새로운 판로
         br
