@@ -85,7 +85,7 @@ export default {
   padding: $grid8x 0 $grid20x;
 
   @media #{$pablet} {
-    padding-bottom: $grid28x;
+    padding-bottom: $grid32x;
   }
 
   @media #{$mobile} {
