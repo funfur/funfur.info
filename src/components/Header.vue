@@ -70,6 +70,25 @@ export default {
   background-color: #fff;
   @include box-shadow($grid2x, $grid3x);
 
+  // safari
+  @supports (-webkit-appearance:none) {
+    background-color: hsla(0,0%,100%,.85);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+            backdrop-filter: saturate(180%) blur(16px);
+  }
+
+  // edge
+  @supports (-ms-ime-align:auto) {
+    background-color: hsla(0,0%,100%,.85);
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+            backdrop-filter: saturate(180%) blur(16px);
+  }
+
+  @media #{$ie}      { background-color: #fff; }
+  @media #{$chrome}  { background-color: #fff; }
+  @media #{$firefox} { background-color: #fff; }
+
+
   .header__left {
     float: left;
 
@@ -124,7 +143,7 @@ export default {
 
     .header__right--icon {
       outline: none;
-      color: $textccc;
+      color: $text999;
       margin-left: $grid8x;
       vertical-align: middle;
       transition: all .25s ease;
