@@ -26,7 +26,7 @@ export default new VueRouter({
     },
     {
       path: '*',
-      redirect: '/'
+      redirect: '/',
     },
     {
       path: '/tos/privacy',
@@ -54,9 +54,12 @@ export default new VueRouter({
       component: Notice,
     },
     {
-      path: '/redirectdl',
-      name: 'redirectdl',
+      path: '/app',
       component: RedirectDL,
+    },
+    {
+      path: '/redirectdl',
+      redirect: '/app',
     },
   ]
 })

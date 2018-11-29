@@ -2,11 +2,23 @@
 import {globalVar} from '@/globalVar'
 
 export default {
-  name: 'redirectdl',
   data () {
     return {
       userAgent: undefined,
     }
+  },
+
+  metaInfo: {
+    title: globalVar.companyNameShort,
+    titleTemplate: '%s' + '앱 다운로드',
+    meta: [
+      {
+        name:     'description',         content: globalVar.companyNameShort + '앱 다운로드',
+        itemprop: 'description',         content: globalVar.companyNameShort + '앱 다운로드',
+        property: 'og:description',      content: globalVar.companyNameShort + '앱 다운로드',
+        name:     'twitter:description', content: globalVar.companyNameShort + '앱 다운로드',
+      }
+    ]
   },
 
   created () {
