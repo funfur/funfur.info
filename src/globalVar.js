@@ -9,6 +9,7 @@ export const globalVar = new Vue ({
     companyNameFull: '주식회사 뻔뻔한친구들',
     companyNameShort: '뻔뻐',
     ceoName: '유덕열',
+    tagline: '뻔뻐: 작품이 되는 원목가구를 만나다',
 
     lat: '37.557196',
     lng: '127.046406',

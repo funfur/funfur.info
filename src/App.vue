@@ -16,6 +16,17 @@ Vue.use(VueProgressBar, {
 export default {
   name: 'app',
 
+  metaInfo: {
+    title: globalVar.tagline,
+    titleTemplate: '%s',
+    meta: [
+      {
+        name: 'keywords',
+        content: '뻔뻐, funfur, 가구, 공방, 공방가구, 앱, 스토리, 디자이너, 인테리어, 원목',
+      },
+    ],
+  },
+
   mounted () {
     this.$Progress.finish()
   },
