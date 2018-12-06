@@ -6,6 +6,7 @@
 
 <script>
 import Vue from 'vue'
+import {globalVar} from '@/globalVar'
 import VueProgressBar from 'vue-progressbar'
 
 Vue.use(VueProgressBar, {
