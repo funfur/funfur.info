@@ -42,6 +42,7 @@
       .accordion__container--icon {
         float: left;
         width: $icon-width;
+        padding-top: calc(#{$grid} / 2);
 
         &::after {
           content: "\02795";
