@@ -50,7 +50,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 #service {
 
   .service__title {

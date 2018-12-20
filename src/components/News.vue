@@ -30,7 +30,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 #news {
   background-color: $brand-yellow;
 

@@ -18,11 +18,11 @@ export default {
     return {
       statsList: {
         storeInfo: {
-          count: 192,
+          count: 18,
           title: '제휴 및 입점 공방 수'
         },
         itemsInfo: {
-          count: 1080,
+          count: 387,
           title: '입점 공방 제품 수'
         },
         mockInfo: {
