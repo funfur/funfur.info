@@ -1,5 +1,6 @@
 <template lang="pug">
   div#terms
+    PageIndicator
     div.terms-wrapper
       h1 {{ companyNameShort }} - {{ pageTitle }}
       h3 제 1 조 (목적)
@@ -138,6 +139,7 @@
 <script>
 import {globalVar} from '@/globalVar'
 import CloseBtn from '@components/misc/CloseBtn'
+import PageIndicator from '@components/misc/PageIndicator'
 
 export default {
   name: 'term-product',
@@ -158,7 +160,8 @@ export default {
   },
 
   components: {
-    CloseBtn
+    CloseBtn,
+    PageIndicator,
   },
 
   updated () {

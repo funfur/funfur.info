@@ -1,5 +1,6 @@
 <template lang="pug">
   div#terms
+    PageIndicator
     div.terms-wrapper
       h1 {{ companyNameShort }} - {{ pageTitle }}
       h3 1. 개인정보의 처리 목적
@@ -91,6 +92,7 @@
 <script>
 import {globalVar} from '@/globalVar'
 import CloseBtn from '@components/misc/CloseBtn'
+import PageIndicator from '@components/misc/PageIndicator'
 
 export default {
   name: 'term-site',
@@ -116,7 +118,8 @@ export default {
   },
 
   components: {
-    CloseBtn
+    CloseBtn,
+    PageIndicator,
   },
 
   updated () {
