@@ -1,6 +1,6 @@
-# ARCHIVED
+# funfur.info
 
-This repository has been archived by the owner. It is now read-only. [NEW REPOSITORY](https://github.com/FunFurCorporation)
+> funfur.info
 
 [Hosted with Firebase](https://funfur.info/)
 
